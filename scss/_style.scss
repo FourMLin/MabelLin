@@ -1,0 +1,62 @@
+$white_color: #fff;
+$main_color: #990921;
+$pink_color: #e48d8d;
+$font_color: #121111;
+
+
+h1{
+  font-size: 90px;
+  margin-bottom: 20px;
+  color: $font_color;
+  font-weight: 700;
+  display: inline;
+}
+
+h2{
+  font-size: 26px;
+  margin-bottom: 20px;
+  color: $font_color;
+  font-weight: 300;
+
+}
+
+h3{
+  font-size: 22px;
+  margin-bottom: 15px;
+  color: $font_color;
+  font-weight: 200;
+}
+
+h4{
+  font-size: 18px;
+  margin-bottom: 10px;
+  color: $font_color;
+  font-weight: 100;
+}
+
+p{
+  font-size: 14px;
+  margin-bottom: 10px;
+  color: $font_color;
+  line-height: 1.4;
+}
+
+a{
+  text-decoration: none;
+  color: $font_color;
+
+  &:hover{
+    text-decoration: none;
+    color: $main_color;
+  }
+
+}
+
+::selection {
+	background: $main_color;
+  color: $white_color;
+}
+::-moz-selection {
+	background: $main_color;
+  color: $white_color;
+}
