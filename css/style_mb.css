@@ -1,6 +1,7 @@
 @media screen and (max-width:568px) {
   .wrapper{
     max-width: 100%;
+    letter-spacing: 1px;
   }
 
   .landingpage {
@@ -42,12 +43,12 @@
   }
 
   .gallery.first {
-    margin: 60px auto 60px;
+    margin: 60px auto 30px;
     padding-top: 0px;
   }
 
   .gallery {
-    margin: 0px auto 60px;
+    margin: 0px auto 40px;
   }
 
   .gallery_img {

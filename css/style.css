@@ -30,7 +30,7 @@ body {
 
 /*******header part start*******/
 header {
-  z-index: 100;
+  z-index: 300;
 }
 
 .edge {
@@ -52,6 +52,7 @@ header {
   left: 5%;
   bottom: 10%;
   text-align: left;
+  z-index: 5;
 }
 
 #about {
@@ -67,6 +68,7 @@ header {
   right: 5%;
   bottom: 10%;
   text-align: right;
+  z-index: 5;
 }
 
 .bar {
@@ -158,6 +160,11 @@ hr {
   max-width: 100%;
   display: flex;
   padding: 0 15px;
+}
+
+.row{
+  margin-right: 0px;
+  margin-left: 0px;
 }
 
 .gallery.first {
