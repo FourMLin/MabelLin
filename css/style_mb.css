@@ -42,13 +42,19 @@
     bottom: 3%;
   }
 
-  .gallery.first {
-    margin: 60px auto 30px;
+  .gallery:nth-child(even){
     padding-top: 0px;
+    margin: 50px auto 0px;
+  }
+
+  .gallery:not(:first-child){
+    margin: 50px auto 0px;
   }
 
   .gallery {
-    margin: 0px auto 40px;
+    margin: 50px auto 0px;
+    max-width: 100%;
+    padding: 0 15px;
   }
 
   .gallery_img {
@@ -62,7 +68,8 @@
 
   .about_textarea {
     width: 100%;
-    margin-bottom: 50px;
+    margin-bottom: 80px;
+    margin-top: 50px;
   }
 
   /*******project1 part start*******/

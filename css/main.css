@@ -47,26 +47,32 @@ table {
 
 h1 {
   font-size: 90px;
-  margin-bottom: 20px;
+  margin-bottom: 40px;
   color: #121111;
   font-weight: 700;
-  display: inline; }
+  display: inline;
+  font-weight: bold; }
 
 h2 {
   font-size: 26px;
-  margin-bottom: 20px;
+  margin-bottom: 35px;
   color: #121111;
-  font-weight: 300; }
+  font-weight: 300;
+  font-weight: bold; }
 
 h3 {
   font-size: 22px;
-  margin-bottom: 15px;
-  color: #121111;}
+  margin-bottom: 25px;
+  color: #121111;
+  font-weight: 300;
+  font-weight: bold; }
 
 h4 {
   font-size: 18px;
-  margin-bottom: 10px;
-  color: #121111; }
+  margin-bottom: 20px;
+  color: #121111;
+  font-weight: 300;
+  font-weight: bold; }
 
 p {
   font-size: 14px;
