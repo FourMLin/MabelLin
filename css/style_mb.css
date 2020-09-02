@@ -1,5 +1,5 @@
 @media screen and (max-width:568px) {
-  .wrapper{
+  .wrapper {
     max-width: 100%;
     letter-spacing: 1px;
   }
@@ -10,7 +10,7 @@
 
   .landingpage img {
     right: 13%;
-}
+  }
 
   .landing {
     top: -10%;
@@ -42,12 +42,12 @@
     bottom: 3%;
   }
 
-  .gallery:nth-child(even){
+  .gallery:nth-child(even) {
     padding-top: 0px;
     margin: 50px auto 0px;
   }
 
-  .gallery:not(:first-child){
+  .gallery:not(:first-child) {
     margin: 50px auto 0px;
   }
 
@@ -73,34 +73,38 @@
   }
 
   /*******project1 part start*******/
-  .project_introduce{
+  .project_introduce {
     padding-top: 60px;
 
   }
 
-  .project_image{
+  .project_image {
     padding: 10px 15px 0;
   }
 
-  .top{
+  .top {
     width: 60%;
     height: 40vh;
   }
 
-  .top_img{
+  .top_img {
     height: 40vh;
   }
 
   .top .top_img img {
     transform: translate(-51%, -5%);
-}
+  }
 
-  .project_introduce ul li{
+  .top_words {
+    font-size: 16px;
+  }
+
+  .project_introduce ul li {
     display: block;
     width: 100%;
   }
 
-  .project_introduce ul li:nth-child(1){
+  .project_introduce ul li:nth-child(1) {
     width: 100%;
   }
 

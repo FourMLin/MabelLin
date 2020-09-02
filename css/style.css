@@ -25,7 +25,7 @@ body {
   position: relative;
   margin: 0 auto;
   max-width: 70%;
-  letter-spacing: 2px;
+  letter-spacing: 1.5px;
 }
 
 /*******header part start*******/
@@ -160,6 +160,7 @@ hr {
   max-width: 960px;
   flex-wrap: wrap;
   margin: 0 auto;
+  padding-top: 30px;
 }
 
 .gallery {
@@ -257,8 +258,8 @@ hr {
 
 .top {
   position: relative;
-  width: 60%;
-  height: 60vh;
+  width: 45%;
+  height: 25vh;
   margin: 0 auto;
   overflow: hidden;
 }
@@ -278,13 +279,14 @@ hr {
 .top_words {
   position: absolute;
   width: 100%;
-  font-size: 30px;
+  font-size: 20px;
   text-align: center;
   color: #fff;
   top: 70%;
   left: 50%;
   transform: translate(-50%, -50%);
   letter-spacing: 9px;
+  line-height: 1.5;
 }
 
 .project_introduce {
