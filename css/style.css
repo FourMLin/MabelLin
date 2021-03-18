@@ -11,9 +11,15 @@
     url('../font/Helvetica.eot') format("embedded-opentype");
 }
 
+@font-face {
+  font-family: 'BowlbyOneSC';
+  src: url(../font/BowlbyOneSC-Regular.ttf);
+}
+
 body {
-  background-color: #fafafa;
-  font-family:'LucidaGrande', 'Microsoft JhengHei', "Helvetica Neue", Helvetica, Arial, "PingFang SC", "Hiragino Sans GB", "Heiti SC", "Microsoft YaHei", "WenQuanYi Micro Hei", sans-serif;
+  background: url(../img/bg.jpg) top repeat;
+  /* background-size: cover; */
+  font-family: 'LucidaGrande', 'Noto Sans TC', "Helvetica Neue", Helvetica, Arial;
   width: 100%;
   overflow-x: hidden;
   overflow-y: scroll;
@@ -24,7 +30,8 @@ body {
 .wrapper {
   position: relative;
   margin: 0 auto;
-  max-width: 70%;
+  padding-left: 16vw;
+  padding-right: 5vw;
   letter-spacing: 1.5px;
 }
 
@@ -42,14 +49,14 @@ header {
 
 #logo {
   position: fixed;
-  left: 5%;
-  top: 10%;
+  left: 3%;
+  top: 6%;
   text-align: left;
 }
 
 #jobs {
   position: fixed;
-  left: 5%;
+  left: 3%;
   bottom: 10%;
   text-align: left;
   z-index: 5;
@@ -57,16 +64,16 @@ header {
 
 #about {
   position: fixed;
-  right: 5%;
-  top: 10%;
+  right: 3%;
+  top: 6%;
   text-align: right;
   z-index: 5;
 }
 
 #licence {
   position: fixed;
-  right: 5%;
-  bottom: 10%;
+  left: 3%;
+  bottom: 6%;
   text-align: right;
   z-index: 5;
 }
@@ -81,7 +88,8 @@ header {
   -moz-border-radius: 30%;
 }
 
-#about:hover .switch, #about:active .switch {
+#about:hover .switch,
+#about:active .switch {
   padding-top: 10px;
   transition: .3s;
   -webkit-transition: .3s;
@@ -104,6 +112,7 @@ hr {
 .contents {
   margin: 0 auto;
   max-width: 100%;
+  padding-bottom: 100px;
 }
 
 /*******landing part start*******/
@@ -123,9 +132,15 @@ hr {
 
 .landing {
   position: relative;
-  left: 10%;
-  transform: translateY(20%);
+  top: 45%;
+  transform: translateY(-50%);
   line-height: 1.2;
+  font-family: 'BowlbyOneSC';
+
+}
+
+.landing h1 {
+  font-weight: normal;
 }
 
 .landing h1 span {
@@ -135,7 +150,7 @@ hr {
 .intro_scroll_down {
   position: absolute;
   text-align: center;
-  bottom: 10%;
+  bottom: 6%;
   left: 50%;
   transform: translate(-50%, -50%);
 }
@@ -155,25 +170,22 @@ hr {
 
 /*******landing part end*******/
 /***gallery part start*****/
-.gallery_wall{
+.gallery_wall {
   display: flex;
-  max-width: 960px;
   flex-wrap: wrap;
-  margin: 0 auto;
   padding-top: 30px;
 }
 
 .gallery {
-  max-width: 50%;
-  padding: 0 30px;
+  width: 50%;
   text-align: center;
 }
 
-.gallery:not(:first-child){
+.gallery:not(:first-child) {
   margin-top: -5%;
 }
 
-.gallery:nth-child(even){
+.gallery:nth-child(even) {
   margin-top: 20%;
 }
 
@@ -183,6 +195,7 @@ hr {
   font-size: 1rem;
   line-height: 1.5;
   padding: 0;
+  padding-top: 10px;
   text-align: left;
 }
 
@@ -191,26 +204,36 @@ hr {
 }
 
 .gallery_img {
-  display: inline-block;
   left: 0%;
-  min-width: 30%;
+  min-width: 50%;
+  max-width: 480px;
   padding: 0;
+  background-color: #750606;
+  min-height: 480px;
+  max-height: 480px;
+  overflow: hidden;
+  position: relative;
+  opacity: .9;
+  transition: .3s ease-out;
 }
 
-.gallery_img{
-  overflow: hidden;
+.gallery_img .gallery_img_block {
+  width: 60px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
 
 .gallery_img img {
   width: 100%;
 }
 
-.gallery_img:hover img{
-  transform: scale(1.1);
+.gallery_img:hover {
+  background-color: #19b6b6;
 }
 
-.gallery_img:hover a:after {
-  opacity: 0;
+.gallery_img:hover img {
   transform: scale(1.1);
 }
 
@@ -242,7 +265,7 @@ hr {
 /*******project1 part start*******/
 #back {
   position: fixed;
-  left: 5%;
+  left: 3%;
   top: 10%;
   text-align: left;
 }
@@ -258,70 +281,101 @@ hr {
 
 .top {
   position: relative;
-  width: 45%;
-  height: 25vh;
   margin: 0 auto;
   overflow: hidden;
+  border-bottom: 2px solid #121111;
+  padding: 13vh 0 3vh;
 }
 
-.top_img {
-  position: relative;
-  text-align: center;
-  z-index: -1;
-}
-
-.top .top_img img {
-  position: absolute;
-  left: 50%;
-  transform: translate(-50%, 0%);
+.top_sub {
+  font-size: 14px;
+  letter-spacing: 5px;
+  font-weight: bold;
 }
 
 .top_words {
-  position: absolute;
   width: 100%;
-  font-size: 20px;
-  text-align: center;
-  color: #fff;
-  top: 70%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  letter-spacing: 9px;
+  font-size: 52px;
+  color: #121111;
+  font-weight: bold;
+  letter-spacing: 2px;
   line-height: 1.5;
+  font-family: 'BowlbyOneSC';
 }
 
 .project_introduce {
   position: relative;
   display: flex;
-  padding-top: 80px;
+  padding-top: 60px;
 }
 
-.project_introduce ul li {
+.project_introduce .project_introduce_list {
+  width: 100%;
+}
+
+.project_introduce .introduce_block {
+  display: flex;
+  width: 100%;
+}
+
+.project_introduce .introduce_block .i_item {
   vertical-align: top;
   display: inline-block;
-  width: 20%;
   padding: 0 15px;
   margin-bottom: 30px;
 }
 
-.project_introduce ul li:nth-child(1) {
+.project_introduce .introduce_block .i_item:nth-child(1) {
   width: 55%;
+  padding-left: 0;
 }
 
-.project_image {
-  padding: 80px 15px 0;
+.project_introduce .introduce_block .i_item .i_text {
+  font-size: 16px;
 }
 
-.project_image h4{
+.project_introduce .introduce_block .i_item.role {
+  margin: 0 0 0 auto;
+}
+
+.project_introduce .introduce_block .i_item.role p {
+  font-size: 16px;
+  font-style: italic;
   font-weight: bold;
+  color: #8a8686;
 }
 
-.project_image li {
-  margin-bottom: 80px;
+.project_part {
+  padding-top: 20px;
 }
 
-.project_image img {
+.project_part .p_title h4{
+  color: #750606;
+  margin-top: 60px;
+}
+
+.project_part .p_img{
+  margin-bottom: 20px;
+}
+
+.project_part .p_img img {
   width: 100%;
 }
+
+.project_part .p_paregragh{
+  margin-top: 80px;
+}
+
+.project_part .p_paregragh_img{
+  margin-top: 60px;
+}
+
+.project_part .p_content {
+  font-size: 15px;
+  line-height: 1.8;
+  width: 70%;
+}
+
 
 /*******project1 part end*******/
 /*******project6 part start*******/
