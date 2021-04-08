@@ -303,6 +303,44 @@ hr {
   font-family: 'BowlbyOneSC';
 }
 
+.top_link {
+  position: absolute;
+  right: 16px;
+  bottom: 8vh;
+  width: 100px;
+  text-align: center;
+  transform: rotate(-10deg);
+}
+
+.top_link a::after {
+  content: "";
+  background: url(../img/link_circle-42.svg) center no-repeat;
+  position: absolute;
+  bottom: 8px;
+  right: 0%;
+  transform: translateY(50%);
+  width: 100px;
+  height: 100px;
+  animation: 6s linkCircle linear infinite;
+  transition: .2s ease-out;
+}
+
+.top_link a:hover::after{
+  background: url(../img/link_circle-43.svg) center no-repeat;
+}
+
+@keyframes linkCircle {
+
+  0% {
+    transform:translateY(50%) rotate(0deg);
+  }
+
+  100% {
+    transform:translateY(50%) rotate(360deg);
+  }
+
+}
+
 .project_introduce {
   position: relative;
   display: flex;
@@ -349,12 +387,12 @@ hr {
   padding-top: 20px;
 }
 
-.project_part .p_title h4{
+.project_part .p_title h4 {
   color: #750606;
   margin-top: 60px;
 }
 
-.project_part .p_img{
+.project_part .p_img {
   margin-bottom: 20px;
 }
 
@@ -362,11 +400,11 @@ hr {
   width: 100%;
 }
 
-.project_part .p_paregragh{
+.project_part .p_paregragh {
   margin-top: 80px;
 }
 
-.project_part .p_paregragh_img{
+.project_part .p_paregragh_img {
   margin-top: 60px;
 }
 
