@@ -2,6 +2,7 @@
   .wrapper {
     max-width: 100%;
     letter-spacing: 1px;
+    padding-left: 5vw;
   }
 
   .landingpage {
@@ -42,6 +43,10 @@
     bottom: 3%;
   }
 
+  #back{
+    top: 5%;
+  }
+
   .gallery:nth-child(even) {
     padding-top: 0px;
     margin: 50px auto 0px;
@@ -74,7 +79,7 @@
 
   /*******project1 part start*******/
   .project_introduce {
-    padding-top: 60px;
+    padding-top: 40px;
 
   }
 
@@ -83,20 +88,12 @@
   }
 
   .top {
-    width: 60%;
-    height: 40vh;
-  }
-
-  .top_img {
-    height: 40vh;
-  }
-
-  .top .top_img img {
-    transform: translate(-51%, -5%);
+    width: 100%;
+    height: 24vh;
   }
 
   .top_words {
-    font-size: 16px;
+    font-size: 32px;
   }
 
   .project_introduce ul li {
@@ -106,6 +103,44 @@
 
   .project_introduce ul li:nth-child(1) {
     width: 100%;
+  }
+
+  .project_introduce .introduce_block{
+    display: block;
+  }
+
+  .project_introduce .introduce_block .i_item:nth-child(1){
+    width: 100%;
+    padding: 0;
+  }
+
+  .project_introduce .introduce_block .i_item.role{
+    padding-left: 0;
+  }
+
+  .top_link{
+    width: 70px;
+  }
+
+  .top_link a{
+    font-size: 12px;
+  }
+
+  .top_link a::after{
+    width: 70px;
+    height: 70px;
+  }
+
+  .project_part .p_content{
+    width: 100%;
+  }
+
+  .project_part .p_paregragh{
+    margin-top: 60px;
+  }
+
+  .project_part .p_title h4{
+    margin-top: 40px;
   }
 
   /*******project1 part end*******/
