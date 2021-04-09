@@ -16,6 +16,11 @@
   src: url(../font/BowlbyOneSC-Regular.ttf);
 }
 
+@font-face {
+  font-family: 'ToppanBunkyuMidashiGothicStdN';
+  src: url(../font/ToppanBunkyuMidashiGothicStdN-ExtraBold.otf);
+}
+
 body {
   background: url(../img/bg.jpg) top repeat;
   /* background-size: cover; */
@@ -302,7 +307,7 @@ hr {
   font-weight: bold;
   letter-spacing: 2px;
   line-height: 1.5;
-  font-family: 'BowlbyOneSC';
+  font-family: 'BowlbyOneSC' , 'ToppanBunkyuMidashiGothicStdN';
 }
 
 .top_link {
