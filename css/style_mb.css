@@ -14,9 +14,18 @@
   }
 
   .landing {
-    top: -10%;
+    top: 12%;
     left: 5%;
     line-height: 1.2;
+    transform: unset;
+  }
+  
+  .landing h1{
+    font-size: 40px;
+  }
+
+  .landing h1 span{
+    font-size: 50px;
   }
 
   .intro_scroll_down {
@@ -36,7 +45,7 @@
   }
 
   #jobs {
-    bottom: 3%;
+    bottom: 6%;
   }
 
   #licence {
@@ -47,23 +56,34 @@
     top: 5%;
   }
 
+
+  .gallery:not(:first-child) {
+    margin: 10px auto 0px;
+  }
+
   .gallery:nth-child(even) {
     padding-top: 0px;
     margin: 50px auto 0px;
   }
 
-  .gallery:not(:first-child) {
-    margin: 50px auto 0px;
-  }
-
   .gallery {
-    margin: 50px auto 0px;
+    margin: 10px auto 0px;
     max-width: 100%;
     padding: 0 15px;
   }
 
   .gallery_img {
     left: 0%;
+    min-height: 140px;
+    max-height: 180px;
+  }
+
+  .gallery_img .gallery_img_block{
+    width: 30px;
+  }
+
+  .project_name p{
+    font-size: 12px;
   }
 
   .aboutme {
