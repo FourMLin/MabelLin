@@ -1,96 +1,194 @@
-/* http://meyerweb.com/eric/tools/css/reset/
-   v2.0 | 20110126
-   License: none (public domain)
-*/
-html, body, div, span, applet, object, iframe,
-h1, h2, h3, h4, h5, h6, p, blockquote, pre,
-a, abbr, acronym, address, big, cite, code,
-del, dfn, em, img, ins, kbd, q, s, samp,
-small, strike, strong, sub, sup, tt, var,
-b, u, i, center,
-dl, dt, dd, ol, ul, li,
-fieldset, form, label, legend,
-table, caption, tbody, tfoot, thead, tr, th, td,
-article, aside, canvas, details, embed,
-figure, figcaption, footer, header, hgroup,
-menu, nav, output, ruby, section, summary,
-time, mark, audio, video {
-  margin: 0;
-  padding: 0;
-  border: 0;
-  font-size: 100%;
-  font: inherit;
-  vertical-align: baseline; }
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline
+}
 
-/* HTML5 display-role reset for older browsers */
-article, aside, details, figcaption, figure,
-footer, header, hgroup, menu, nav, section {
-  display: block; }
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+    display: block
+}
 
 body {
-  line-height: 1; }
+    line-height: 1
+}
 
-ol, ul {
-  list-style: none; }
+ol,
+ul {
+    list-style: none
+}
 
-blockquote, q {
-  quotes: none; }
+blockquote,
+q {
+    quotes: none
+}
 
-blockquote:before, blockquote:after,
-q:before, q:after {
-  content: '';
-  content: none; }
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+    content: '';
+    content: none
+}
 
 table {
-  border-collapse: collapse;
-  border-spacing: 0; }
+    border-collapse: collapse;
+    border-spacing: 0
+}
 
 h1 {
-  font-size: 105px;
-  margin-bottom: 40px;
-  color: #121111;
-  font-weight: 700;
-  display: inline;
-  font-weight: bold; }
+    font-size: 90px;
+    margin-bottom: 40px;
+    color: #121111;
+    font-weight: 700;
+    display: inline;
+    font-weight: bold
+}
 
 h2 {
-  font-size: 26px;
-  margin-bottom: 35px;
-  color: #121111;
-  font-weight: 300;
-  font-weight: bold; }
+    font-size: 26px;
+    margin-bottom: 35px;
+    color: #121111;
+    font-weight: 300;
+    font-weight: bold
+}
 
 h3 {
-  font-size: 22px;
-  margin-bottom: 25px;
-  color: #121111;
-  font-weight: 300;
-  font-weight: bold; }
+    font-size: 22px;
+    margin-bottom: 25px;
+    color: #121111;
+    font-weight: 300;
+    font-weight: bold
+}
 
 h4 {
-  font-size: 18px;
-  margin-bottom: 20px;
-  color: #121111;
-  font-weight: 300;
-  font-weight: bold; }
+    font-size: 18px;
+    margin-bottom: 20px;
+    color: #121111;
+    font-weight: 300;
+    font-weight: bold
+}
 
 p {
-  font-size: 14px;
-  margin-bottom: 10px;
-  color: #121111;
-  line-height: 1.4; }
+    font-size: 14px;
+    margin-bottom: 10px;
+    color: #121111;
+    line-height: 1.4
+}
 
 a {
-  text-decoration: none;
-  color: #121111; }
-  a:hover {
     text-decoration: none;
-    color: #990921; }
+    color: #750606
+}
 
-::selection {
-  background: #990921;
-  color: #fff; }
+a:hover {
+    text-decoration: none;
+    color: #19b6b6
+}
 
 ::-moz-selection {
-  background: #990921;
-  color: #fff; }
+    background: #750606;
+    color: #fff
+}
+
+::selection {
+    background: #750606;
+    color: #fff
+}
+
+::-moz-selection {
+    background: #750606;
+    color: #fff
+}

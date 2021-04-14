@@ -399,6 +399,12 @@ hr {
   margin-top: 60px;
 }
 
+.project_part .p_block h5,.project_part .p_block h6{
+  color: #750606;
+  margin: 60px 0 15px;
+  font-weight: 500;
+}
+
 .project_part .p_img {
   margin-bottom: 20px;
 }
