@@ -32,7 +32,8 @@ body {
   padding: 0;
 
 }
-body::after{
+
+body.index_bg::after{
   content: "";
   background: url(../img/bg.svg) top right no-repeat;
   background-size: 100%;
