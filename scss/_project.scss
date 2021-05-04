@@ -1,0 +1,180 @@
+$pc-media:1099px;
+$padb-media:991px;
+$mobile-media:768px;
+$min-media:414px;
+
+@mixin pc-width() {
+    @media all and (min-width: $pc-media) {
+        @content;
+    }
+}
+
+@mixin pad-width() {
+    @media all and (max-width: $pc-media) {
+        @content;
+    }
+}
+
+@mixin mobile-width() {
+    @media all and (max-width: $mobile-media) {
+        @content;
+    }
+}
+
+$red:#750606;
+$black:#121111;
+$dark-gray:#333333;
+$gray:#8a8686;
+$pale-gray:#d8d8d8;
+$white-gray:#F4F4F4;
+$white:#ffffff;
+$green:#19b6b6;
+
+.content_wrap{
+    margin-left: 28vh;
+    margin-right: 28vh;
+}
+
+.main_title{
+    width: 100%;
+    height: 460px;
+    max-height: 600px;
+    display: flex;
+
+    @include mobile-width(){
+        height: 600px;
+    }
+
+    &.triplei{
+        background: url(../img/T-1.jpg) center no-repeat $dark-gray;
+    }
+
+    &.smartbeb{
+        background: url(../img/S-1.jpg) center no-repeat $dark-gray;
+    }
+
+    .title_text{
+        color: $white;
+        padding: 1rem;
+        text-align: center;
+        max-width: 600px;
+        margin: auto;
+
+        .title_p{
+            font-size: 18px;
+            line-height: 2;
+
+            @include mobile-width(){
+                font-size: 16px;
+            }
+        }
+
+        a{
+            display: block;
+            margin-top: 60px;
+        }
+
+        .secret{
+            color:$gray;
+            opacity: .6;
+        }
+    }
+}
+
+.project_text{
+    text-align: center;
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 60px 16px 30px;
+    position: relative;
+
+    @include mobile-width(){
+        padding: 40px 16px 20px;
+    }
+
+    &::after{
+        content: "";
+        width: 30px;
+        height: 1px;
+        background-color: $gray;
+        position: absolute;
+        bottom: 0;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+
+}
+
+.numberlist{
+    margin: 0 auto;
+    text-align: left;
+    background-color: #d8d8d8;
+    padding: 1rem;
+}
+
+.highlight{
+    padding: 32px 16px;
+
+    i{
+        font-size: 20px;
+        color: $dark-gray;
+    }
+    
+}
+
+.project_imgs{
+    margin: 0 auto;
+    padding: 60px 16px 30px;
+
+    @include mobile-width(){
+        padding: 40px 16px 20px;
+    }
+
+    .all_img{
+        margin: 0 auto;
+    }
+
+    .square_img{
+        max-width: 400px;
+    }
+
+    .long_img{
+        max-width: 800px;
+    }
+
+    img{
+        width: 100%;
+    }
+
+    span{
+        font-size: 12px;
+        color: $gray;
+        text-align: center;
+        display: block;
+        line-height: 3;
+    }
+}
+
+.about_me{
+    max-width: 600px;
+    margin: 0 auto;
+    display: flex;
+
+    .about_img{
+        border-radius: 99em;
+        flex: 1 0 150px;
+        width: 150px;
+        height: 150px;
+        background-color: $gray;
+        overflow: hidden;
+
+        img{
+            width: 100%;
+        }
+    }
+
+    .about_text{
+        padding-left: 40px;
+    }
+
+}
