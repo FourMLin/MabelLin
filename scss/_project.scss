@@ -53,6 +53,10 @@ $green:#19b6b6;
         background: url(../img/S-1.jpg) center no-repeat $dark-gray;
     }
 
+    &.screea{
+        background: url(../img/A-1.jpg) center no-repeat $dark-gray;
+    }
+
     .title_text{
         color: $white;
         padding: 1rem;
@@ -82,7 +86,7 @@ $green:#19b6b6;
 }
 
 .project_text{
-    text-align: center;
+    text-align: left;
     max-width: 600px;
     margin: 0 auto;
     padding: 60px 16px 30px;
@@ -92,17 +96,42 @@ $green:#19b6b6;
         padding: 40px 16px 20px;
     }
 
-    &::after{
-        content: "";
-        width: 30px;
-        height: 1px;
-        background-color: $gray;
-        position: absolute;
-        bottom: 0;
-        left: 50%;
-        transform: translateX(-50%);
+    h3{
+        span{
+            color: $red;
+            font-size: 18px;
+        }
     }
 
+
+}
+
+.project_both{
+    text-align: left;
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 0px 16px 30px;
+    margin-top: -16px;
+
+    .both_block{
+        display: flex;
+        margin-top: 32px;
+    }
+
+    .block_img{
+        overflow: hidden;
+        width: 100px;
+        height: 100px;
+        background-color: $gray;
+
+        img{
+            width: 100%;
+        }
+    }
+
+    .block_text{
+        margin-left: 16px;
+    }
 }
 
 .numberlist{
@@ -114,6 +143,7 @@ $green:#19b6b6;
 
 .highlight{
     padding: 32px 16px;
+    text-align: center;
 
     i{
         font-size: 20px;
@@ -154,6 +184,23 @@ $green:#19b6b6;
         line-height: 3;
     }
 }
+
+.project_quote{
+    padding: 30px 16px;
+    margin: 0px auto;
+    max-width: 600px;
+
+    .quote{
+        padding-left: 32px;
+        border-left: 3px solid $red;
+        line-height: 2;
+        margin: 15px 0;
+        
+    }
+
+}
+
+
 
 .about_me{
     max-width: 600px;

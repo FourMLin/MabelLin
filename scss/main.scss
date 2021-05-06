@@ -64,6 +64,11 @@ body {
     width: 100%;
     font-family: 'LucidaGrande', 'Noto Sans TC', "Helvetica Neue", Helvetica, Arial;
     background: $white-gray;
+    font-size: 18px;
+
+    @include mobile-width(){
+        font-size: 16px;
+    }
 }
 
 h1,
@@ -77,7 +82,23 @@ h6 {
     margin: 0;
 }
 
+h1{
+    font-size: 36px;
+
+    @include mobile-width(){
+        font-size: 32px;
+    }
+}
+
 h2{
+    font-size: 32px;
+
+    @include mobile-width(){
+        font-size: 28px;
+    }
+}
+
+h3{
     font-size: 28px;
 
     @include mobile-width(){
@@ -85,7 +106,7 @@ h2{
     }
 }
 
-h3{
+h4{
     font-size: 24px;
 
     @include mobile-width(){
@@ -93,7 +114,7 @@ h3{
     }
 }
 
-h4{
+h5{
     font-size: 20px;
 
     @include mobile-width(){
@@ -101,17 +122,16 @@ h4{
     }
 }
 
-h5{
-    font-size: 18px;
-
-    @include mobile-width(){
-        font-size: 16px;
-    }
-}
-
 p {
     line-height: 1.5;
     letter-spacing: .8px;
+    font-size: 18px;
+
+    &.note{
+        color: $gray;
+        font-size: 16px;
+
+    }
 }
 
 a {
@@ -133,10 +153,19 @@ a {
 }
 
 ul {
+
     li {
         list-style: none;
+        line-height: 1.5;
     }
 }
+
+ol{
+    li{
+        line-height: 1.5;
+    }
+}
+
 
 .wrapper {
     width: 100%;
@@ -340,7 +369,10 @@ footer {
         background-color: $dark-gray;
         color: $white;
         padding: 3rem 16px;
-        display: flex;
+
+        .content_wrap{
+            display: flex;
+        }
 
         a{
 
