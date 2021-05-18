@@ -1,6 +1,6 @@
 $pc-media:1099px;
 $padb-media:991px;
-$mobile-media:768px;
+$mobile-media:767px;
 $min-media:414px;
 
 @mixin pc-width() {
@@ -31,8 +31,8 @@ $white:#ffffff;
 $green:#19b6b6;
 
 .content_wrap{
-    margin-left: 28vh;
-    margin-right: 28vh;
+    max-width: 1140px;
+    margin: 0 auto;
 }
 
 .main_title{
@@ -40,6 +40,10 @@ $green:#19b6b6;
     height: 460px;
     max-height: 600px;
     display: flex;
+
+    @include pad-width(){
+        height: 500px;
+    }
 
     @include mobile-width(){
         height: 600px;
@@ -96,7 +100,7 @@ $green:#19b6b6;
         padding: 40px 16px 20px;
     }
 
-    h3{
+    h3,h4{
         span{
             color: $red;
             font-size: 18px;
