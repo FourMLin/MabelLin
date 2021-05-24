@@ -270,6 +270,10 @@ header {
                 margin: 16px;
                 transition: .2s ease-out;
 
+                @include mobile-width(){
+                    padding: 1rem 1rem 2rem 1rem;
+                }
+
                 .wrap_bg {
                     background-color: $white;
                     border-radius: 3px;
