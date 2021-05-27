@@ -250,19 +250,14 @@ header {
         padding: 0;
         display: flex;
         flex-wrap: wrap;
-        max-width: 1080px;
+        max-width: 660px;
         margin: 0 auto;
 
         li {
-            max-width: 50%;
-            flex: 1 0 50%;
+            max-width: 100%;
+            flex: 1 0 100%;
             transition: .2s ease-out;
             cursor: pointer;
-
-            @include mobile-width() {
-                max-width: 100%;
-                flex: 1 0 100%;
-            }
 
             .item_wrap {
                 padding: 1rem 3rem 2rem 1rem;
@@ -283,7 +278,7 @@ header {
                     transition: .2s ease-out;
 
                     .item_img {
-                        width: 25%;
+                        width: 20%;
                         margin: auto 0;
 
                         img {
@@ -405,13 +400,12 @@ footer {
     }
 
     .footer_text {
-        margin-left: 30vh;
-        margin-right: 30vh;
+        max-width: 660px;
         display: flex;
+        margin: 0 auto;
+        padding: 0 16px;
 
         @include mobile-width() {
-            margin-left: 1rem;
-            margin-right: 1rem;
             display: block;
         }
 
