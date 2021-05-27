@@ -803,8 +803,8 @@ footer .footer_text p:first-child {
 }
 
 .main_title .title_text a {
-  display: block;
-  margin-top: 60px;
+  display: inline-block;
+  margin-top: 30px;
 }
 
 .main_title .title_text .secret {
