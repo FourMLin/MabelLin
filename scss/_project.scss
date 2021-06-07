@@ -30,78 +30,79 @@ $white-gray:#F4F4F4;
 $white:#ffffff;
 $green:#19b6b6;
 
-.content_wrap{
+.content_wrap {
     max-width: 1140px;
     margin: 0 auto;
 }
 
-.main_title{
+.main_title {
     width: 100%;
     height: 460px;
     max-height: 600px;
     display: flex;
 
-    @include pad-width(){
+    @include pad-width() {
         height: 500px;
     }
 
-    @include mobile-width(){
+    @include mobile-width() {
         height: 600px;
     }
 
-    &.triplei{
+    &.triplei {
         background: url(../img/T-1.jpg) center no-repeat $dark-gray;
     }
 
-    &.smartbeb{
+    &.smartbeb {
         background: url(../img/S-1.jpg) center no-repeat $dark-gray;
     }
 
-    &.screea{
+    &.screea {
         background: url(../img/A-1.jpg) center no-repeat $dark-gray;
     }
 
-    .title_text{
+    .title_text {
         color: $white;
         padding: 1rem;
         text-align: center;
         max-width: 600px;
         margin: auto;
 
-        .title_p{
+        .title_p {
             font-size: 18px;
             line-height: 2;
 
-            @include mobile-width(){
+            @include mobile-width() {
                 font-size: 16px;
             }
         }
 
-        a{
+        a {
             display: inline-block;
             margin-top: 30px;
         }
 
-        .secret{
-            color:$gray;
+        .secret {
+            color: $gray;
             opacity: .6;
         }
     }
 }
 
-.project_text{
+.project_text {
     text-align: left;
     max-width: 600px;
     margin: 0 auto;
     padding: 60px 16px 30px;
     position: relative;
 
-    @include mobile-width(){
+    @include mobile-width() {
         padding: 40px 16px 20px;
     }
 
-    h3,h4{
-        span{
+    h3,
+    h4 {
+        span {
             color: $red;
             font-size: 18px;
         }
@@ -110,76 +111,76 @@ $green:#19b6b6;
 
 }
 
-.project_both{
+.project_both {
     text-align: left;
     max-width: 600px;
     margin: 0 auto;
     padding: 0px 16px 30px;
     margin-top: -16px;
 
-    .both_block{
+    .both_block {
         display: flex;
         margin-top: 32px;
     }
 
-    .block_img{
+    .block_img {
         overflow: hidden;
         width: 100px;
         height: 100px;
 
-        img{
+        img {
             width: 100%;
         }
     }
 
-    .block_text{
+    .block_text {
         margin-left: 16px;
     }
 }
 
-.numberlist{
+.numberlist {
     margin: 0 auto;
     text-align: left;
     background-color: #d8d8d8;
     padding: 1rem;
 }
 
-.highlight{
+.highlight {
     padding: 32px 16px;
     text-align: center;
 
-    i{
+    i {
         font-size: 20px;
         color: $dark-gray;
     }
-    
+
 }
 
-.project_imgs{
+.project_imgs {
     margin: 0 auto;
     padding: 60px 16px 30px;
 
-    @include mobile-width(){
+    @include mobile-width() {
         padding: 40px 16px 20px;
     }
 
-    .all_img{
+    .all_img {
         margin: 0 auto;
     }
 
-    .square_img{
+    .square_img {
         max-width: 400px;
     }
 
-    .long_img{
+    .long_img {
         max-width: 800px;
     }
 
-    img{
+    img {
         width: 100%;
     }
 
-    span{
+    span {
         font-size: 14px;
         color: $gray;
         text-align: center;
@@ -188,29 +189,29 @@ $green:#19b6b6;
     }
 }
 
-.project_quote{
+.project_quote {
     padding: 30px 16px;
     margin: 0px auto;
     max-width: 600px;
 
-    .quote{
+    .quote {
         padding-left: 32px;
         border-left: 3px solid $red;
         line-height: 2;
         margin: 15px 0;
-        
+
     }
 
 }
 
 
 
-.about_me{
+.about_me {
     max-width: 600px;
     margin: 0 auto;
     display: flex;
 
-    .about_img{
+    .about_img {
         border-radius: 99em;
         flex: 1 0 150px;
         width: 150px;
@@ -218,13 +219,51 @@ $green:#19b6b6;
         background-color: $gray;
         overflow: hidden;
 
-        img{
+        img {
             width: 100%;
         }
     }
 
-    .about_text{
+    .about_text {
         padding-left: 40px;
     }
 
+}
+
+//masnory
+
+.masnory {
+    max-width: 960px;
+    -webkit-column-count: 3;
+    -moz-column-count: 3;
+    column-count: 3;
+    -webkit-column-gap: 1rem;
+    -moz-column-gap: 1rem;
+    column-gap: 1rem;
+    margin: 0 auto;
+    padding: 0;
+
+    @include pad-width() {
+        -moz-column-count: 2;
+        -webkit-column-count: 2;
+        column-count: 2;
+    }
+
+    @include mobile-width() {
+        -moz-column-count: 1;
+        -webkit-column-count: 1;
+        column-count: 1;
+    }
+
+    .m_item {
+        display: inline-block;
+        margin: .5rem 1rem;
+        width: 100%;
+        transition: .3s ease all;
+        
+        img {
+            width: 100%;
+            border-radius: 6px;
+        }
+    }
 }
