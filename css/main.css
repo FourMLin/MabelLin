@@ -832,6 +832,12 @@ footer .footer_text p:first-child {
   font-size: 18px;
 }
 
+.banner_text {
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 30px 16px 30px;
+}
+
 .project_both {
   text-align: left;
   max-width: 600px;
@@ -979,7 +985,7 @@ footer .footer_text p:first-child {
 
 .masnory .m_item {
   display: inline-block;
-  margin: .5rem 1rem;
+  margin: .5rem 0;
   width: 100%;
   -webkit-transition: .3s ease all;
   transition: .3s ease all;

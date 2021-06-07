@@ -111,6 +111,12 @@ $green:#19b6b6;
 
 }
 
+.banner_text{
+    max-width: 960px;
+    margin: 0 auto;
+    padding: 30px 16px 30px;
+}
+
 .project_both {
     text-align: left;
     max-width: 600px;
@@ -230,6 +236,8 @@ $green:#19b6b6;
 
 }
 
+
+
 //masnory
 
 .masnory {
@@ -257,7 +265,7 @@ $green:#19b6b6;
 
     .m_item {
         display: inline-block;
-        margin: .5rem 1rem;
+        margin: .5rem 0;
         width: 100%;
         transition: .3s ease all;
         
