@@ -966,7 +966,7 @@ footer .footer_text p:first-child {
   -webkit-column-gap: 1rem;
   column-gap: 1rem;
   margin: 0 auto;
-  padding: 0;
+  padding: 0 16px;
 }
 
 @media all and (max-width: 1099px) {

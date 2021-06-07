@@ -249,7 +249,7 @@ $green:#19b6b6;
     -moz-column-gap: 1rem;
     column-gap: 1rem;
     margin: 0 auto;
-    padding: 0;
+    padding: 0 16px;
 
     @include pad-width() {
         -moz-column-count: 2;
