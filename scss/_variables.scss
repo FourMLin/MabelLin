@@ -1,4 +1,55 @@
+@font-face {
+    font-family: 'LucidaGrande';
+    src: local("LucidaGrande") ， url('..font//LucidaGrande.woff') format("woff"),
+        url('../font/LucidaGrande.ttf') format("opentype"),
+        url('../font/Helvetica.eot') format("embedded-opentype");
+}
 
+@font-face {
+    font-family: 'BowlbyOneSC';
+    src: url(../font/BowlbyOneSC-Regular.ttf);
+}
+
+@font-face {
+    font-family: 'ToppanBunkyuMidashiGothicStdN';
+    src: url(../font/ToppanBunkyuMidashiGothicStdN-ExtraBold.otf);
+}
+
+$pc-media:1099px;
+$padb-media:991px;
+$mobile-media:768px;
+$min-media:414px;
+
+@mixin pc-width() {
+    @media all and (min-width: $pc-media) {
+        @content;
+    }
+}
+
+@mixin pad-width() {
+    @media all and (max-width: $pc-media) {
+        @content;
+    }
+}
+
+@mixin mobile-width() {
+    @media all and (max-width: $mobile-media) {
+        @content;
+    }
+}
+
+$red:#750606;
+$header-color:#f8f1da;
+$black:#121111;
+$dark-gray:#333333;
+$gray:#8a8686;
+$white-gray:#f8f8f8;
+$white:#ffffff;
+$green:#19b6b6;
+$g-insure: #f7efd3;
+$g-iot: #D9E2E8;
+$g-iii: #dbd9e8;
+$g-erp: #d9e8e2;
 
 
 
