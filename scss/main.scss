@@ -34,7 +34,7 @@
     width: 90%;
     margin: 0 auto;
     display: flex;
-    padding: 1rem;
+    padding: 2rem;
     position: fixed;
     top: 0;
     left: 0;
@@ -63,13 +63,13 @@
 
     a {
         display: block;
-        width: 40px;
+        width: 30px;
     }
 }
 
 
 footer {
-    padding: 1rem 0;
+    padding: 1rem 2rem;
     position: relative;
 
     .footer_text {
@@ -168,10 +168,6 @@ footer {
     background-color: $header-color;
     color: $black;
     z-index: 3;
-
-    // span{
-    //     background-color: $black;
-    // }
 }
 
 .portfolio_list {

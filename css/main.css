@@ -294,7 +294,7 @@ textarea {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  padding: 1rem;
+  padding: 2rem;
   position: fixed;
   top: 0;
   left: 0;
@@ -322,11 +322,11 @@ textarea {
 
 .mabel_logo a {
   display: block;
-  width: 40px;
+  width: 30px;
 }
 
 footer {
-  padding: 1rem 0;
+  padding: 1rem 2rem;
   position: relative;
 }
 
@@ -356,7 +356,7 @@ footer .footer_text p:first-child {
 
 .landing_page {
   height: 100vh;
-  background-color: #f3f1ed;
+  background-color: #ece3e3;
   position: relative;
 }
 
@@ -369,7 +369,7 @@ footer .footer_text p:first-child {
           transform: translate(-50%, -50%);
   width: 1px;
   height: 75%;
-  background-color: #f3f1ed;
+  background-color: #ece3e3;
   z-index: 1;
 }
 
@@ -441,7 +441,7 @@ footer .footer_text p:first-child {
           transform: translate(-50%, -50%);
   line-height: 1.5;
   padding: 2rem 0;
-  background-color: #f3f1ed;
+  background-color: #ece3e3;
   color: #121111;
   z-index: 3;
 }
@@ -555,7 +555,7 @@ footer .footer_text p:first-child {
 }
 
 .digital-insurance .item-inner {
-  background-color: #f7efd3;
+  background-color: #f7f2df;
 }
 
 .digital-insurance .item-inner::after {
@@ -586,6 +586,21 @@ footer .footer_text p:first-child {
   background-image: url();
 }
 
+@font-face {
+  font-family: 'LucidaGrande';
+  src: local("LucidaGrande") ， url("..font//LucidaGrande.woff") format("woff"), url("../font/LucidaGrande.ttf") format("opentype"), url("../font/Helvetica.eot") format("embedded-opentype");
+}
+
+@font-face {
+  font-family: 'BowlbyOneSC';
+  src: url(../font/BowlbyOneSC-Regular.ttf);
+}
+
+@font-face {
+  font-family: 'ToppanBunkyuMidashiGothicStdN';
+  src: url(../font/ToppanBunkyuMidashiGothicStdN-ExtraBold.otf);
+}
+
 .content_wrap {
   max-width: 1140px;
   margin: 0 auto;
@@ -593,8 +608,8 @@ footer .footer_text p:first-child {
 
 .main_title {
   width: 100%;
-  height: 460px;
-  max-height: 600px;
+  height: 550px;
+  max-height: 550px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -606,7 +621,7 @@ footer .footer_text p:first-child {
   }
 }
 
-@media all and (max-width: 767px) {
+@media all and (max-width: 768px) {
   .main_title {
     height: 600px;
   }
@@ -637,7 +652,7 @@ footer .footer_text p:first-child {
   line-height: 2;
 }
 
-@media all and (max-width: 767px) {
+@media all and (max-width: 768px) {
   .main_title .title_text .title_p {
     font-size: 16px;
   }
@@ -661,7 +676,7 @@ footer .footer_text p:first-child {
   position: relative;
 }
 
-@media all and (max-width: 767px) {
+@media all and (max-width: 768px) {
   .project_text {
     padding: 40px 16px 20px;
   }
@@ -730,7 +745,7 @@ footer .footer_text p:first-child {
   padding: 60px 16px 30px;
 }
 
-@media all and (max-width: 767px) {
+@media all and (max-width: 768px) {
   .project_imgs {
     padding: 40px 16px 20px;
   }
@@ -817,7 +832,7 @@ footer .footer_text p:first-child {
   }
 }
 
-@media all and (max-width: 767px) {
+@media all and (max-width: 768px) {
   .masnory {
     -webkit-column-count: 1;
     column-count: 1;

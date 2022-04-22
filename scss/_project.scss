@@ -1,34 +1,4 @@
-$pc-media:1099px;
-$padb-media:991px;
-$mobile-media:767px;
-$min-media:414px;
-
-@mixin pc-width() {
-    @media all and (min-width: $pc-media) {
-        @content;
-    }
-}
-
-@mixin pad-width() {
-    @media all and (max-width: $pc-media) {
-        @content;
-    }
-}
-
-@mixin mobile-width() {
-    @media all and (max-width: $mobile-media) {
-        @content;
-    }
-}
-
-$red:#750606;
-$black:#121111;
-$dark-gray:#333333;
-$gray:#8a8686;
-$pale-gray:#d8d8d8;
-$white-gray:#F4F4F4;
-$white:#ffffff;
-$green:#19b6b6;
+@import '_variables';
 
 .content_wrap {
     max-width: 1140px;
@@ -37,8 +7,8 @@ $green:#19b6b6;
 
 .main_title {
     width: 100%;
-    height: 460px;
-    max-height: 600px;
+    height: 550px;
+    max-height: 550px;
     display: flex;
 
     @include pad-width() {
