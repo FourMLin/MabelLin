@@ -1,9 +1,68 @@
 @import '_variables';
 
 .content_wrap {
-    max-width: 1140px;
+    max-width: 950px;
     margin: 0 auto;
 }
+
+.project-wrap{
+    padding: 3rem 1rem;
+
+    h5,
+    h4 {
+        margin-bottom: 1rem;
+        line-height: 1.2;
+
+        span {
+            color: $red;
+            font-size: 16px;
+        }
+    }
+}
+
+.lore-title{
+    margin-bottom: 2rem;
+}
+
+.project_lore{
+    display: flex;
+    flex-wrap: wrap;
+    
+    .lore-item{
+        margin-bottom: 3rem;
+
+        span{
+            font-size: 12px;
+            color: $gray;
+        }
+    }
+
+    .lg-lore{
+        flex: 1 0 66.6667%;
+        max-width: 66.6667%;
+
+        p{
+            padding-right: 5rem;
+        }
+
+        @include mobile-width(){
+            flex: 1 0 100%;
+            max-width: 100%;
+        }
+    }
+
+    .sm-lore{
+        flex: 1 0 33.3334%;
+        max-width: 33.3334%;
+
+        @include mobile-width(){
+            flex: 1 0 100%;
+            max-width: 100%;
+        }
+    }
+}
+
+
 
 .main_title {
     width: 100%;
@@ -61,21 +120,13 @@
 
 .project_text {
     text-align: left;
-    max-width: 600px;
+    max-width: 968px;
     margin: 0 auto;
-    padding: 60px 16px 30px;
+    padding: 4rem 0 2rem;
     position: relative;
 
     @include mobile-width() {
-        padding: 40px 16px 20px;
-    }
-
-    h3,
-    h4 {
-        span {
-            color: $red;
-            font-size: 18px;
-        }
+        padding: 2rem 0 1rem;
     }
 
 
