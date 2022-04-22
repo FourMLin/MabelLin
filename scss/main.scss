@@ -12,7 +12,7 @@
 }
 
 .list_container {
-    max-width: 968px;
+    max-width: 1028px;
     margin: 0 auto;
     padding: 1rem 0;
 }
@@ -97,6 +97,19 @@ footer {
     background-color: $header-color;
     position: relative;
 
+    &::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0%;
+        background-image: url(../img/link_circle-42.svg);
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: 40%;
+        width: 100%;
+        height: 100%;
+    }
+
     &::after {
         content: "";
         position: absolute;
@@ -115,15 +128,19 @@ footer {
     font-size: 60px;
     font-weight: bold;
     text-align: center;
+    width: 100%;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -60%);
     line-height: 1.5;
-    padding: 1rem;
+    padding: 2rem 0;
     background-color: $header-color;
     color: $black;
-    // border-radius: 16px;
     z-index: 1;
+
+    // span{
+    //     background-color: $black;
+    // }
 }
 
 .portfolio_list {
@@ -160,7 +177,7 @@ footer {
 }
 
 .item-inner {
-    padding: 2rem 2rem;
+    padding: 3rem 3rem;
     border-radius: 8px;
     display: block;
     position: relative;
@@ -173,7 +190,7 @@ footer {
 
     &::after {
         content: "";
-        background-position: right -15% bottom;
+        background-position: right -20% bottom;
         background-repeat: no-repeat;
         background-size: 60%;
         position: absolute;
@@ -191,8 +208,8 @@ footer {
 
     .item-block {
         position: relative;
-        width: 60%;
-        max-width: 60%;
+        width: 70%;
+        max-width: 70%;
 
         @include mobile-width() {
             width: 100%;
