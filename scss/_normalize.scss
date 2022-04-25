@@ -93,7 +93,12 @@ p {
   &.note {
     color: $gray;
     font-size: 14px;
+  }
 
+  &.secret{
+    color: $gray;
+    font-size: 12px;
+    margin-top: 0.5rem;
   }
 }
 

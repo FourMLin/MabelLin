@@ -127,6 +127,12 @@ p.note {
   font-size: 14px;
 }
 
+p.secret {
+  color: #8a8686;
+  font-size: 12px;
+  margin-top: 0.5rem;
+}
+
 a {
   color: #121111;
   text-decoration: none;
@@ -511,6 +517,7 @@ footer .footer_text p:first-child {
   bottom: 0;
   width: 100%;
   height: 100%;
+  border-radius: 8px;
   z-index: -1;
 }
 
@@ -610,14 +617,17 @@ footer .footer_text p:first-child {
   padding: 3rem 1rem;
 }
 
-.project-wrap h3,
-.project-wrap h5,
-.project-wrap h4 {
-  margin-bottom: 1rem;
+.project-wrap h3 {
+  margin-bottom: 1.5rem;
   line-height: 1.2;
 }
 
-.project-wrap h3 span,
+.project-wrap h5,
+.project-wrap h4 {
+  margin-bottom: 0.75rem;
+  line-height: 1.2;
+}
+
 .project-wrap h5 span,
 .project-wrap h4 span {
   color: #750606;
@@ -745,7 +755,7 @@ footer .footer_text p:first-child {
 
 .project_text {
   text-align: left;
-  max-width: 968px;
+  max-width: 950px;
   margin: 0 auto;
   padding: 4rem 0 1rem;
   position: relative;
@@ -758,11 +768,15 @@ footer .footer_text p:first-child {
 }
 
 .project_text p {
+  margin-bottom: 0.5rem;
+}
+
+.project_text p:last-child {
   margin-bottom: 2rem;
 }
 
 .banner_text {
-  max-width: 960px;
+  max-width: 950px;
   margin: 0 auto;
   padding: 30px 16px 30px;
 }
@@ -924,4 +938,3 @@ footer .footer_text p:first-child {
   width: 100%;
   border-radius: 6px;
 }
-/*# sourceMappingURL=main.css.map */
