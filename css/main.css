@@ -413,8 +413,8 @@ footer .footer_text p:first-child {
             transform: rotate(0deg);
   }
   to {
-    -webkit-transform: rotate(360deg);
-            transform: rotate(360deg);
+    -webkit-transform: rotate(-360deg);
+            transform: rotate(-360deg);
   }
 }
 
@@ -424,8 +424,8 @@ footer .footer_text p:first-child {
             transform: rotate(0deg);
   }
   to {
-    -webkit-transform: rotate(360deg);
-            transform: rotate(360deg);
+    -webkit-transform: rotate(-360deg);
+            transform: rotate(-360deg);
   }
 }
 
@@ -610,12 +610,14 @@ footer .footer_text p:first-child {
   padding: 3rem 1rem;
 }
 
+.project-wrap h3,
 .project-wrap h5,
 .project-wrap h4 {
   margin-bottom: 1rem;
   line-height: 1.2;
 }
 
+.project-wrap h3 span,
 .project-wrap h5 span,
 .project-wrap h4 span {
   color: #750606;
@@ -745,7 +747,7 @@ footer .footer_text p:first-child {
   text-align: left;
   max-width: 968px;
   margin: 0 auto;
-  padding: 4rem 0 2rem;
+  padding: 4rem 0 1rem;
   position: relative;
 }
 
@@ -753,6 +755,10 @@ footer .footer_text p:first-child {
   .project_text {
     padding: 2rem 0 1rem;
   }
+}
+
+.project_text p {
+  margin-bottom: 2rem;
 }
 
 .banner_text {
