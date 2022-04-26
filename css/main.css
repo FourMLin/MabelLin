@@ -768,10 +768,6 @@ footer .footer_text p:first-child {
 }
 
 .project_text p {
-  margin-bottom: 0.5rem;
-}
-
-.project_text p:last-child {
   margin-bottom: 2rem;
 }
 
@@ -938,3 +934,4 @@ footer .footer_text p:first-child {
   width: 100%;
   border-radius: 6px;
 }
+/*# sourceMappingURL=main.css.map */
