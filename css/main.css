@@ -771,6 +771,10 @@ footer .footer_text p:first-child {
   margin-bottom: 2rem;
 }
 
+.project_text .all_img {
+  margin-top: 1.5rem;
+}
+
 .banner_text {
   max-width: 950px;
   margin: 0 auto;
@@ -934,4 +938,3 @@ footer .footer_text p:first-child {
   width: 100%;
   border-radius: 6px;
 }
-/*# sourceMappingURL=main.css.map */
