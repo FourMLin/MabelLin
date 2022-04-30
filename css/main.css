@@ -301,7 +301,7 @@ textarea {
   display: -ms-flexbox;
   display: flex;
   padding: 2rem;
-  position: fixed;
+  position: absolute;
   top: 0;
   left: 0;
   right: 0;
@@ -373,7 +373,7 @@ footer .footer_text p:first-child {
   left: 50%;
   -webkit-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%);
-  width: 1px;
+  width: 4px;
   height: 75%;
   background-color: #ece3e3;
   z-index: 1;
@@ -698,6 +698,9 @@ footer .footer_text p:first-child {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
 }
 
 @media all and (max-width: 1099px) {
@@ -713,15 +716,11 @@ footer .footer_text p:first-child {
 }
 
 .main_title.triplei {
-  background: url(../img/T-1.jpg) center no-repeat #333333;
+  background-image: url(../img/T-1.jpg);
 }
 
 .main_title.smartbeb {
-  background: url(../img/S-1.jpg) center no-repeat #333333;
-}
-
-.main_title.screea {
-  background: url(../img/A-1.jpg) center no-repeat #333333;
+  background-image: url(../img/S-1.jpg);
 }
 
 .main_title .title_text {
@@ -765,6 +764,10 @@ footer .footer_text p:first-child {
   .project_text {
     padding: 2rem 0 1rem;
   }
+}
+
+.project_text h4 {
+  margin-top: 2.5rem;
 }
 
 .project_text p {
@@ -829,17 +832,22 @@ footer .footer_text p:first-child {
 
 .project_imgs {
   margin: 0 auto;
-  padding: 60px 16px 30px;
+  padding: 4rem 1rem;
 }
 
 @media all and (max-width: 768px) {
   .project_imgs {
-    padding: 40px 16px 20px;
+    padding: 2rem 1rem;
   }
 }
 
-.project_imgs .all_img {
+.project_imgs .project_imgs_title {
+  max-width: 950px;
   margin: 0 auto;
+}
+
+.project_imgs .all_img {
+  margin: 1.5rem auto 0;
 }
 
 .project_imgs .square_img {
@@ -847,7 +855,7 @@ footer .footer_text p:first-child {
 }
 
 .project_imgs .long_img {
-  max-width: 800px;
+  max-width: 950px;
 }
 
 .project_imgs img {
@@ -860,6 +868,28 @@ footer .footer_text p:first-child {
   text-align: center;
   display: block;
   line-height: 3;
+}
+
+.imgs_flex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.imgs_flex .imgs_left {
+  -webkit-box-flex: 1;
+      -ms-flex: 1 0 40%;
+          flex: 1 0 40%;
+  max-width: 40%;
+  padding-right: 10%;
+}
+
+.imgs_flex .imgs_right {
+  -webkit-box-flex: 1;
+      -ms-flex: 1 0 50%;
+          flex: 1 0 50%;
+  max-width: 50%;
+  margin: 0;
 }
 
 .project_quote {

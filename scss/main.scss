@@ -35,7 +35,7 @@
     margin: 0 auto;
     display: flex;
     padding: 2rem;
-    position: fixed;
+    position: absolute;
     top: 0;
     left: 0;
     right: 0;
@@ -103,7 +103,7 @@ footer {
         top: 50%;
         left: 50%;
         transform: translate(-50%, -50%);
-        width: 1px;
+        width: 4px;
         height: 75%;
         background-color: $header-color;
         z-index: 1;

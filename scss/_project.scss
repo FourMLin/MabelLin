@@ -74,6 +74,9 @@
     height: 550px;
     max-height: 550px;
     display: flex;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
 
     @include pad-width() {
         height: 500px;
@@ -84,15 +87,11 @@
     }
 
     &.triplei {
-        background: url(../img/T-1.jpg) center no-repeat $dark-gray;
+        background-image: url(../img/T-1.jpg);
     }
 
     &.smartbeb {
-        background: url(../img/S-1.jpg) center no-repeat $dark-gray;
-    }
-
-    &.screea {
-        background: url(../img/A-1.jpg) center no-repeat $dark-gray;
+        background-image: url(../img/S-1.jpg);
     }
 
     .title_text {
@@ -134,6 +133,10 @@
         padding: 2rem 0 1rem;
     }
 
+    h4{
+        margin-top: 2.5rem;
+    }
+
     p {
         margin-bottom: 2rem;
     }
@@ -142,6 +145,7 @@
         margin-top: 1.5rem;
     }
     
+
 
 }
 
@@ -198,14 +202,19 @@
 
 .project_imgs {
     margin: 0 auto;
-    padding: 60px 16px 30px;
+    padding: 4rem 1rem;
 
     @include mobile-width() {
-        padding: 40px 16px 20px;
+        padding: 2rem 1rem;
+    }
+
+    .project_imgs_title{
+        max-width: 950px;
+        margin: 0 auto;
     }
 
     .all_img {
-        margin: 0 auto;
+        margin: 1.5rem auto 0;
     }
 
     .square_img {
@@ -213,7 +222,7 @@
     }
 
     .long_img {
-        max-width: 800px;
+        max-width: 950px;
     }
 
     img {
@@ -226,6 +235,22 @@
         text-align: center;
         display: block;
         line-height: 3;
+    }
+}
+
+.imgs_flex{
+    display: flex;
+
+    .imgs_left{
+        flex: 1 0 40%;
+        max-width: 40%;
+        padding-right: 10%;
+    }
+
+    .imgs_right{
+        flex: 1 0 50%;
+        max-width: 50%;
+        margin: 0;
     }
 }
 
