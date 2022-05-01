@@ -85,22 +85,22 @@ h2 {
 }
 
 h3 {
-  font-size: 28px;
+  font-size: 26px;
 }
 
 @media all and (max-width: 768px) {
   h3 {
-    font-size: 26px;
+    font-size: 24px;
   }
 }
 
 h4 {
-  font-size: 24px;
+  font-size: 22px;
 }
 
 @media all and (max-width: 768px) {
   h4 {
-    font-size: 22px;
+    font-size: 18px;
   }
 }
 
