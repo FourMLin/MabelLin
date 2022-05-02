@@ -96,6 +96,7 @@ footer {
     height: 100vh;
     background-color: $header-color;
     position: relative;
+    overflow: hidden;
 
     &::before {
         content: "";
@@ -126,6 +127,8 @@ footer {
     position: relative;
     height: 100vh;
     z-index: 2;
+    animation: loading 1.5s both ease-in-out;
+    animation-delay: 1s;
 
     &::before {
         content: "";
@@ -154,6 +157,15 @@ footer {
     }
 }
 
+@keyframes loading {
+    from {
+        opacity:0;
+    }
+    to {
+        opacity:1;
+    }
+}
+
 .big-title {
     position: absolute;
     font-size: 60px;
@@ -168,6 +180,8 @@ footer {
     background-color: $header-color;
     color: $black;
     z-index: 3;
+    animation: loading 1s both ease-in-out;
+    animation-delay: .2s;
 }
 
 .portfolio_list {
