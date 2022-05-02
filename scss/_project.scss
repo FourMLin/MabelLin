@@ -94,6 +94,10 @@
         background-image: url(../img/S-1.jpg);
     }
 
+    &.iot {
+        background-image: url(../img/iot-0.jpg);
+    }
+
     .title_text {
         color: $white;
         padding: 1rem;
@@ -126,7 +130,7 @@
     text-align: left;
     max-width: 950px;
     margin: 0 auto;
-    padding: 4rem 0 1rem;
+    padding: 3.5rem 0 1rem;
     position: relative;
 
     @include mobile-width() {
@@ -137,15 +141,21 @@
         margin-top: 2.5rem;
     }
 
+    h5{
+        margin-top: 1rem;
+    }
+
     p {
-        margin-bottom: 2rem;
+        margin-bottom: 0.5rem;
+
+        &:last-of-type{
+            margin-bottom: 2rem;
+        }
     }
 
     .all_img{
         margin-top: 1.5rem;
     }
-    
-
 
 }
 

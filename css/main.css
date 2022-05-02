@@ -105,12 +105,12 @@ h4 {
 }
 
 h5 {
-  font-size: 20px;
+  font-size: 18px;
 }
 
 @media all and (max-width: 768px) {
   h5 {
-    font-size: 18px;
+    font-size: 16px;
   }
 }
 
@@ -362,7 +362,7 @@ footer .footer_text p:first-child {
 
 .landing_page {
   height: 100vh;
-  background-color: #ece3e3;
+  background-color: #f5e9e9;
   position: relative;
 }
 
@@ -375,7 +375,7 @@ footer .footer_text p:first-child {
           transform: translate(-50%, -50%);
   width: 4px;
   height: 75%;
-  background-color: #ece3e3;
+  background-color: #f5e9e9;
   z-index: 1;
 }
 
@@ -447,7 +447,7 @@ footer .footer_text p:first-child {
           transform: translate(-50%, -50%);
   line-height: 1.5;
   padding: 2rem 0;
-  background-color: #ece3e3;
+  background-color: #f5e9e9;
   color: #121111;
   z-index: 3;
 }
@@ -570,11 +570,11 @@ footer .footer_text p:first-child {
 }
 
 .smarthome-app .item-inner {
-  background-color: #D9E2E8;
+  background-color: #d9e8f3;
 }
 
 .smarthome-app .item-inner::after {
-  background-image: url();
+  background-image: url(../img/index-iot.png);
 }
 
 .erp .item-inner {
@@ -723,6 +723,10 @@ footer .footer_text p:first-child {
   background-image: url(../img/S-1.jpg);
 }
 
+.main_title.iot {
+  background-image: url(../img/iot-0.jpg);
+}
+
 .main_title .title_text {
   color: #ffffff;
   padding: 1rem;
@@ -756,7 +760,7 @@ footer .footer_text p:first-child {
   text-align: left;
   max-width: 950px;
   margin: 0 auto;
-  padding: 4rem 0 1rem;
+  padding: 3.5rem 0 1rem;
   position: relative;
 }
 
@@ -770,7 +774,15 @@ footer .footer_text p:first-child {
   margin-top: 2.5rem;
 }
 
+.project_text h5 {
+  margin-top: 1rem;
+}
+
 .project_text p {
+  margin-bottom: 0.5rem;
+}
+
+.project_text p:last-of-type {
   margin-bottom: 2rem;
 }
 
