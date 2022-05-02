@@ -246,6 +246,10 @@
         display: block;
         line-height: 3;
     }
+
+    &.whole-img{
+        max-width: unset;
+    }
 }
 
 .imgs_flex{

@@ -334,6 +334,7 @@ textarea {
 footer {
   padding: 1rem 2rem;
   position: relative;
+  text-align: center;
 }
 
 footer .footer_text {
@@ -907,6 +908,10 @@ footer .footer_text p:first-child {
   text-align: center;
   display: block;
   line-height: 3;
+}
+
+.project_imgs.whole-img {
+  max-width: unset;
 }
 
 .imgs_flex {
