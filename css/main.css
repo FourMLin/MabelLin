@@ -844,7 +844,7 @@ footer .footer_text p:first-child {
 
 .project_imgs {
   margin: 0 auto;
-  padding: 4rem 1rem;
+  padding: 3.5rem 1rem;
 }
 
 @media all and (max-width: 768px) {
