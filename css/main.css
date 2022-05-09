@@ -286,6 +286,16 @@ textarea {
   max-width: 50%;
 }
 
+@media all and (max-width: 768px) {
+  .w-50 {
+    -webkit-box-flex: 1;
+        -ms-flex: 1 0 100%;
+            flex: 1 0 100%;
+    width: 100%;
+    max-width: 100%;
+  }
+}
+
 .w-100 {
   -webkit-box-flex: 1;
       -ms-flex: 1 0 100%;
@@ -419,6 +429,12 @@ footer .footer_text p:first-child {
           animation: circle 40s linear infinite;
 }
 
+@media all and (max-width: 768px) {
+  .landing-bg::before {
+    background-size: 100%;
+  }
+}
+
 @-webkit-keyframes circle {
   from {
     -webkit-transform: rotate(0deg);
@@ -480,6 +496,12 @@ footer .footer_text p:first-child {
           animation-delay: .2s;
 }
 
+@media all and (max-width: 768px) {
+  .big-title {
+    font-size: 42px;
+  }
+}
+
 .portfolio_list {
   padding: 3rem 0;
 }
@@ -531,6 +553,7 @@ footer .footer_text p:first-child {
 
 @media all and (max-width: 768px) {
   .item-inner {
+    padding: 1.5rem 1.5rem;
     padding-bottom: 10rem;
   }
 }
@@ -551,8 +574,8 @@ footer .footer_text p:first-child {
 
 @media all and (max-width: 768px) {
   .item-inner::after {
-    background-size: 100%;
-    background-position: right bottom -15%;
+    background-size: 75%;
+    background-position: right bottom;
   }
 }
 
@@ -619,6 +642,35 @@ footer .footer_text p:first-child {
 
 .triple .item-inner::after {
   background-image: url(../img/gallery1.png);
+}
+
+.img-text-wrap {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.img-text-wrap .img-text-vertical {
+  -webkit-box-flex: 1;
+      -ms-flex: 1 0 50%;
+          flex: 1 0 50%;
+  max-width: 50%;
+}
+
+.img-text-wrap .img-text-vertical .img-text-vertical-img {
+  width: 60px;
+  padding: 0 1rem;
+  margin-top: 1rem;
+}
+
+.img-text-wrap .img-text-vertical .img-text-vertical-text {
+  padding: 0 1rem;
+}
+
+.img-text-wrap .img-text-vertical .img-text-vertical-text h5 {
+  margin-top: 1rem;
 }
 
 @font-face {
@@ -1012,3 +1064,4 @@ footer .footer_text p:first-child {
   width: 100%;
   border-radius: 6px;
 }
+/*# sourceMappingURL=main.css.map */
