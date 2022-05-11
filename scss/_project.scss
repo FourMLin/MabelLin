@@ -393,3 +393,26 @@
         padding-left: 8px;
     }
 }
+
+.img-text-wrap {
+    display: flex;
+    flex-wrap: wrap;
+
+    .img-text-vertical {
+        flex: 1 0 40%;
+        max-width: 40%;
+        padding-right: 10%;
+
+        .img-text-vertical-img {
+            width: 100px;
+            margin-top: 1rem;
+        }
+
+        .img-text-vertical-text {
+
+            h5 {
+                margin-top: 1rem
+            }
+        }
+    }
+}

@@ -649,35 +649,6 @@ footer .footer_text p:first-child {
   background-image: url(../img/gallery1.png);
 }
 
-.img-text-wrap {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-}
-
-.img-text-wrap .img-text-vertical {
-  -webkit-box-flex: 1;
-      -ms-flex: 1 0 50%;
-          flex: 1 0 50%;
-  max-width: 50%;
-}
-
-.img-text-wrap .img-text-vertical .img-text-vertical-img {
-  width: 60px;
-  padding: 0 1rem;
-  margin-top: 1rem;
-}
-
-.img-text-wrap .img-text-vertical .img-text-vertical-text {
-  padding: 0 1rem;
-}
-
-.img-text-wrap .img-text-vertical .img-text-vertical-text h5 {
-  margin-top: 1rem;
-}
-
 @font-face {
   font-family: 'LucidaGrande';
   src: local("LucidaGrande") ， url("..font//LucidaGrande.woff") format("woff"), url("../font/LucidaGrande.ttf") format("opentype"), url("../font/Helvetica.eot") format("embedded-opentype");
@@ -1118,3 +1089,29 @@ footer .footer_text p:first-child {
   margin: auto 0;
   padding-left: 8px;
 }
+
+.img-text-wrap {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.img-text-wrap .img-text-vertical {
+  -webkit-box-flex: 1;
+      -ms-flex: 1 0 40%;
+          flex: 1 0 40%;
+  max-width: 40%;
+  padding-right: 10%;
+}
+
+.img-text-wrap .img-text-vertical .img-text-vertical-img {
+  width: 100px;
+  margin-top: 1rem;
+}
+
+.img-text-wrap .img-text-vertical .img-text-vertical-text h5 {
+  margin-top: 1rem;
+}
+/*# sourceMappingURL=main.css.map */

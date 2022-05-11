@@ -351,28 +351,6 @@ footer {
 
 }
 
-.img-text-wrap {
-    display: flex;
-    flex-wrap: wrap;
 
-    .img-text-vertical {
-        flex: 1 0 50%;
-        max-width: 50%;
-
-        .img-text-vertical-img {
-            width: 60px;
-            padding: 0 1rem;
-            margin-top: 1rem;
-        }
-
-        .img-text-vertical-text {
-            padding: 0 1rem;
-
-            h5 {
-                margin-top: 1rem
-            }
-        }
-    }
-}
 
 @import '_project';
