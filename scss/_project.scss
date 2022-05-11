@@ -34,11 +34,15 @@
     flex-wrap: wrap;
 
     .lore-item {
-        margin-bottom: 3rem;
+        margin-bottom: 2rem;
 
         span {
             font-size: 12px;
             color: $gray;
+        }
+
+        &:last-of-type{
+            margin-top: -3.5rem;
         }
     }
 
@@ -87,7 +91,7 @@
     }
 
     &.triplei {
-        background-image: url(../img/T-1.jpg);
+        background-image: url(../img/T-n-0.png);
     }
 
     &.smartbeb {
@@ -130,7 +134,7 @@
     text-align: left;
     max-width: 950px;
     margin: 0 auto;
-    padding: 3.5rem 0 1rem;
+    padding: 2.5rem 0 1rem;
     position: relative;
 
     @include mobile-width() {
@@ -157,6 +161,14 @@
         margin-top: 1.5rem;
     }
 
+    ol{
+        margin: 1rem 0;
+
+        li{
+            margin: 0.5rem 0;
+        }
+    }
+
 }
 
 .banner_text {
@@ -167,20 +179,21 @@
 
 .project_both {
     text-align: left;
-    max-width: 600px;
+    max-width: 950px;
     margin: 0 auto;
-    padding: 0px 16px 30px;
-    margin-top: -16px;
+    display: flex;
+    margin-left: -1rem;
+    margin-right: -1rem;
 
     .both_block {
-        display: flex;
-        margin-top: 32px;
+        margin-top: 1rem;
+        padding: 1rem;
     }
 
     .block_img {
         overflow: hidden;
-        width: 100px;
-        height: 100px;
+        width: 80px;
+        height: 80px;
 
         img {
             width: 100%;
@@ -188,7 +201,15 @@
     }
 
     .block_text {
-        margin-left: 16px;
+        margin-top: 1rem;
+
+        h5,p{
+            margin: 0;
+        }
+
+        p{
+            margin-top: 0.5rem;
+        }
     }
 }
 
@@ -256,26 +277,26 @@
     display: flex;
 
     .imgs_left{
-        flex: 1 0 40%;
-        max-width: 40%;
+        flex: 1 0 50%;
+        max-width: 50%;
         padding-right: 10%;
     }
 
     .imgs_right{
-        flex: 1 0 50%;
-        max-width: 50%;
+        flex: 1 0 40%;
+        max-width: 40%;
         margin: 0;
     }
 }
 
 .project_quote {
-    padding: 30px 16px;
-    margin: 0px auto;
-    max-width: 600px;
+    padding: 2.5rem 0 1rem;
+    margin: 0 auto;
+    max-width: 950px;
 
     .quote {
-        padding-left: 32px;
-        border-left: 3px solid $red;
+        padding-left: 1.5rem;
+        border-left: 5px solid $red;
         line-height: 2;
         margin: 15px 0;
 
@@ -346,5 +367,29 @@
             width: 100%;
             border-radius: 6px;
         }
+    }
+}
+
+.persona_list{
+    display: flex;
+
+    li{
+        margin: auto 0;
+        margin-right: 2rem;
+        display: flex;
+    }
+
+    .persona_img{
+        width: 35px;
+
+        img{
+            width: 100%;
+        }
+    }
+
+    .persona_text{
+        display: block;
+        margin: auto 0;
+        padding-left: 8px;
     }
 }
