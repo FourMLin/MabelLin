@@ -537,7 +537,7 @@ footer .footer_text p:first-child {
 
 @media all and (max-width: 768px) {
   .gallery-item {
-    padding: 0rem;
+    padding: 1rem 0rem;
   }
 }
 

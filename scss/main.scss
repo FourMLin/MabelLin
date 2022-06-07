@@ -224,7 +224,7 @@ footer {
     cursor: pointer;
 
     @include mobile-width() {
-        padding: 0rem;
+        padding: 1rem 0rem;
     }
 
     &:hover {
