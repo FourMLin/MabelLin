@@ -146,7 +146,7 @@
     position: relative;
 
     @include mobile-width() {
-        padding: 2rem 0 1rem;
+        padding: 0;
     }
 
     h4 {
@@ -245,7 +245,7 @@
     padding: 3.5rem 1rem;
 
     @include mobile-width() {
-        padding: 2rem 1rem;
+        padding: 0;
     }
 
     .project_imgs_title {

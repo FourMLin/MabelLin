@@ -837,7 +837,7 @@ footer .footer_text p:first-child {
 
 @media all and (max-width: 768px) {
   .project_text {
-    padding: 2rem 0 1rem;
+    padding: 0;
   }
 }
 
@@ -938,7 +938,7 @@ footer .footer_text p:first-child {
 
 @media all and (max-width: 768px) {
   .project_imgs {
-    padding: 2rem 1rem;
+    padding: 0;
   }
 }
 
