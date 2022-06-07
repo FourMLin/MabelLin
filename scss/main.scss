@@ -37,7 +37,6 @@
 
 
 .mabel_head {
-    width: 90%;
     margin: 0 auto;
     display: flex;
     padding: 2rem;
@@ -225,7 +224,7 @@ footer {
     cursor: pointer;
 
     @include mobile-width() {
-        padding: 1rem;
+        padding: 0rem;
     }
 
     &:hover {
