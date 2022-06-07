@@ -716,7 +716,7 @@ footer .footer_text p:first-child {
 
 @media all and (max-width: 768px) {
   .project_lore .lore-item:last-of-type {
-    margin-top: -3.5rem;
+    margin-top: 0rem;
   }
 }
 

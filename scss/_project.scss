@@ -45,7 +45,7 @@
             margin-top: -3.5rem;
 
             @include mobile-width() {
-                margin-top: -3.5rem;
+                margin-top: 0rem;
             }
         }
     }
