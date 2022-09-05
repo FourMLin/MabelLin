@@ -1,9 +1,6 @@
 <<<<<<< HEAD
 @charset "UTF-8";
 @font-face {
-  font-family: 'LucidaGrande';
-  src: local("LucidaGrande") ， url("..font//LucidaGrande.woff") format("woff"), url("../font/LucidaGrande.ttf") format("opentype"), url("../font/Helvetica.eot") format("embedded-opentype");
-}
 
 @font-face {
   font-family: 'BowlbyOneSC';
