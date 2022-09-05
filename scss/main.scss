@@ -78,6 +78,11 @@ footer {
     position: relative;
     text-align: center;
 
+    &.darkmod{
+        background-color: #141414;
+        color: $white;
+    }
+
     .footer_text {
         display: flex;
         margin: 0 auto;

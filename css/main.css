@@ -115,7 +115,7 @@ h5 {
 }
 
 p {
-  line-height: 1.7;
+  line-height: 1.2;
   letter-spacing: .5px;
   font-size: 16px;
   margin: 0;
@@ -190,7 +190,7 @@ strong {
 img {
   border-style: none;
   display: block;
-  width: 100%;
+  max-width: 100%;
 }
 
 button,
@@ -349,6 +349,11 @@ footer {
   padding: 1rem 2rem;
   position: relative;
   text-align: center;
+}
+
+footer.darkmod {
+  background-color: #141414;
+  color: #ffffff;
 }
 
 footer .footer_text {
@@ -664,7 +669,7 @@ footer .footer_text p:first-child {
 }
 
 .content_wrap {
-  max-width: 950px;
+  max-width: 800px;
   margin: 0 auto;
 }
 
@@ -672,8 +677,13 @@ footer .footer_text p:first-child {
   padding: 3rem 1rem;
 }
 
+.project-wrap.darkmod {
+  background-color: #141414;
+  color: #ffffff;
+}
+
 .project-wrap h3 {
-  margin-bottom: 1.5rem;
+  margin-bottom: 1rem;
   line-height: 1.2;
 }
 
@@ -702,22 +712,12 @@ footer .footer_text p:first-child {
 }
 
 .project_lore .lore-item {
-  margin-bottom: 2rem;
+  margin-bottom: 3rem;
 }
 
 .project_lore .lore-item span {
   font-size: 12px;
   color: #8a8686;
-}
-
-.project_lore .lore-item:last-of-type {
-  margin-top: -3.5rem;
-}
-
-@media all and (max-width: 768px) {
-  .project_lore .lore-item:last-of-type {
-    margin-top: 0rem;
-  }
 }
 
 .project_lore .lg-lore {
@@ -795,7 +795,7 @@ footer .footer_text p:first-child {
 }
 
 .main_title.iot {
-  background-image: url(../img/iot-0.jpg);
+  background-image: url(../img//future/0.png);
 }
 
 .main_title .title_text {
@@ -829,7 +829,7 @@ footer .footer_text p:first-child {
 
 .project_text {
   text-align: left;
-  max-width: 950px;
+  max-width: 800px;
   margin: 0 auto;
   padding: 2.5rem 0 1rem;
   position: relative;
@@ -842,19 +842,19 @@ footer .footer_text p:first-child {
 }
 
 .project_text h3 {
-  margin-top: 2.5rem;
+  margin-top: 5rem;
 }
 
 .project_text h4 {
-  margin-top: 2.5rem;
+  margin-top: 3.5rem;
 }
 
 .project_text h5 {
-  margin-top: 2rem;
+  margin-top: 2.5rem;
 }
 
 .project_text p {
-  margin-bottom: 0.5rem;
+  margin-bottom: 1rem;
 }
 
 .project_text p:last-of-type {
@@ -862,7 +862,7 @@ footer .footer_text p:first-child {
 }
 
 .project_text .all_img {
-  margin-top: 1.5rem;
+  margin: 1.5rem auto 0;
 }
 
 .project_text ol {
@@ -990,7 +990,7 @@ footer .footer_text p:first-child {
 }
 
 .project_imgs img {
-  width: 100%;
+  max-width: 100%;
 }
 
 .project_imgs span {
@@ -1191,3 +1191,4 @@ footer .footer_text p:first-child {
 .img-text-wrap .img-text-vertical .img-text-vertical-text h5 {
   margin-top: 1rem;
 }
+/*# sourceMappingURL=main.css.map */
