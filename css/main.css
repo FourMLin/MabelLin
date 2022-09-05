@@ -1989,10 +1989,21 @@ footer .footer_text p:first-child {
   }
 }
 
+<<<<<<< HEAD
 .project_text h4 {
   margin-top: 2.5rem;
 }
 
+=======
+.project_text h3 {
+  margin-top: 2.5rem;
+}
+
+.project_text h4 {
+  margin-top: 2.5rem;
+}
+
+>>>>>>> parent of 10ad5c9 (123)
 .project_text h5 {
   margin-top: 2rem;
 }
@@ -2284,4 +2295,7 @@ footer .footer_text p:first-child {
 .img-text-wrap .img-text-vertical .img-text-vertical-text h5 {
   margin-top: 1rem;
 }
+<<<<<<< HEAD
 >>>>>>> parent of d971fbe (234)
+=======
+>>>>>>> parent of 10ad5c9 (123)

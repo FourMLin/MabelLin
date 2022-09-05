@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 @import '_normalize';
 @import '_variables';
 
@@ -357,4 +358,360 @@ footer {
 
 
 
+=======
+@import '_normalize';
+@import '_variables';
+
+.wrapper {
+    position: relative;
+}
+
+.container {
+    max-width: 1440px;
+    margin: 0 auto;
+    padding: 1rem;
+}
+
+.list_container {
+    max-width: 1028px;
+    margin: 0 auto;
+    padding: 1rem 0;
+}
+
+.w-50 {
+    flex: 1 0 50%;
+    width: 50%;
+    max-width: 50%;
+
+    @include mobile-width() {
+        flex: 1 0 100%;
+        width: 100%;
+        max-width: 100%;
+    }
+}
+
+.w-100 {
+    flex: 1 0 100%;
+    width: 100%;
+    max-width: 100%;
+}
+
+
+.mabel_head {
+    margin: 0 auto;
+    display: flex;
+    padding: 2rem;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 9;
+
+    nav {
+        ul {
+            li {
+                display: inline-block;
+
+                a {
+                    padding: 1rem;
+
+                    &:hover {
+                        border-bottom: 5px solid $red;
+                    }
+                }
+            }
+        }
+    }
+}
+
+.mabel_logo {
+    flex: auto;
+
+    a {
+        display: block;
+        width: 30px;
+    }
+}
+
+
+footer {
+    padding: 1rem 2rem;
+    position: relative;
+    text-align: center;
+
+    .footer_text {
+        display: flex;
+        margin: 0 auto;
+        padding: 0 16px;
+
+        @include mobile-width() {
+            display: block;
+        }
+
+        p {
+            font-size: 12px;
+
+            &:first-child {
+                flex: auto;
+            }
+        }
+    }
+
+}
+
+.landing_page {
+    height: 100vh;
+    background-color: $header-color;
+    position: relative;
+    overflow: hidden;
+
+    &::before {
+        content: "";
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        width: 4px;
+        height: 75%;
+        background-color: $header-color;
+        z-index: 1;
+    }
+
+    &::after {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 1px;
+        height: 95%;
+        background-color: $black;
+        z-index: 0;
+    }
+}
+
+.landing-bg {
+    position: relative;
+    height: 100vh;
+    z-index: 2;
+    animation: loading 1.5s both ease-in-out;
+    animation-delay: 1s;
+
+    &::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0%;
+        background-image: url(../img/link_circle-42.svg);
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: 35%;
+        width: 100%;
+        height: 100%;
+        animation: circle 40s linear infinite;
+
+        @include mobile-width() {
+            background-size: 100%;
+        }
+    }
+
+}
+
+@keyframes circle {
+
+    from {
+        transform: rotate(0deg);
+    }
+
+    to {
+        transform: rotate(-360deg);
+    }
+}
+
+@keyframes loading {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+.big-title {
+    position: absolute;
+    font-size: 60px;
+    font-weight: bold;
+    text-align: center;
+    width: 100%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    line-height: 1.5;
+    padding: 2rem 0;
+    background-color: $header-color;
+    color: $black;
+    z-index: 3;
+    animation: loading 1s both ease-in-out;
+    animation-delay: .2s;
+
+    @include mobile-width() {
+        font-size: 42px;
+    }
+}
+
+.portfolio_list {
+    padding: 3rem 0;
+}
+
+.portfolio_list-title {
+    text-align: center;
+
+    h2 {
+        margin-bottom: 0.5rem;
+    }
+}
+
+.portfolio_list-gallery {
+    padding: 1rem;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.gallery-item {
+    padding: 1rem;
+    position: relative;
+    transition: .3s ease-out;
+    cursor: pointer;
+
+    @include mobile-width() {
+        padding: 1rem 0rem;
+    }
+
+    &:hover {
+        transform: scale(1.02);
+    }
+}
+
+.item-inner {
+    padding: 3rem 3rem;
+    border-radius: 8px;
+    display: block;
+    position: relative;
+    z-index: 2;
+    color: $black;
+
+    @include mobile-width() {
+        padding: 1.5rem 1.5rem;
+        padding-bottom: 10rem;
+    }
+
+    &::after {
+        content: "";
+        background-position: right -20% bottom;
+        background-repeat: no-repeat;
+        background-size: 60%;
+        position: absolute;
+        right: 0;
+        bottom: 0;
+        width: 100%;
+        height: 100%;
+        border-radius: 8px;
+        z-index: -1;
+
+        @include mobile-width() {
+            background-size: 75%;
+            background-position: right bottom;
+        }
+    }
+
+    .item-block {
+        position: relative;
+        width: 70%;
+        max-width: 70%;
+
+        @include mobile-width() {
+            width: 100%;
+            max-width: 100%;
+        }
+    }
+
+
+    .item-logo {
+        width: 50px;
+        margin-bottom: 1rem;
+    }
+
+    .item-content {
+
+        h4 {
+            margin-bottom: 0.5rem;
+        }
+    }
+
+}
+
+.item-tag {
+    margin-top: 1.5rem;
+
+    ul {
+        li {
+            display: inline-block;
+            font-size: 14px;
+            opacity: 0.6;
+            margin-right: 0.5rem
+        }
+    }
+}
+
+.digital-insurance {
+
+    .item-inner {
+        background-color: $g-insure;
+
+        &::after {
+            background-image: url(../img/gallery3.png);
+        }
+    }
+}
+
+.smarthome-app {
+
+    .item-inner {
+        background-color: $g-iot;
+
+        &::after {
+            background-image: url(../img/index-iot.png);
+        }
+    }
+
+}
+
+.erp {
+
+    .item-inner {
+        background-color: $g-erp;
+
+        &::after {
+            background-image: url();
+        }
+    }
+
+}
+
+.triple {
+
+    .item-inner {
+        background-color: $g-iii;
+
+        &::after {
+            background-image: url(../img/gallery1.png);
+        }
+    }
+
+}
+
+
+
+>>>>>>> parent of 10ad5c9 (123)
 @import '_project';
