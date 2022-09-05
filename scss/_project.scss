@@ -154,10 +154,13 @@
         padding: 0;
     }
 
+<<<<<<< HEAD
     h3{
         margin-top: 5rem;
     }
 
+=======
+>>>>>>> parent of d971fbe (234)
     h4 {
         margin-top: 3.5rem;
     }
@@ -202,27 +205,15 @@
     margin-left: -1rem;
     margin-right: -1rem;
 
-    @include mobile-width(){
-        display: block;
-    }
-
     .both_block {
         margin-top: 1rem;
         padding: 1rem;
-
-        @include mobile-width(){
-            display: flex;
-        }
     }
 
     .block_img {
         overflow: hidden;
         width: 80px;
         height: 80px;
-
-        @include mobile-width(){
-            margin-right: 1rem;
-        }
 
         img {
             width: 100%;
@@ -231,10 +222,6 @@
 
     .block_text {
         margin-top: 1rem;
-
-        @include mobile-width(){
-            margin-top: 0;
-        }
 
         h5,
         p {
@@ -310,31 +297,16 @@
 .imgs_flex {
     display: flex;
 
-    @include mobile-width(){
-        display: block;
-    }
-
     .imgs_left {
         flex: 1 0 50%;
         max-width: 50%;
         padding-right: 10%;
-
-        @include mobile-width() {
-            flex: 1 0 100%;
-            max-width: 100%;
-            padding-right: 0%;
-        }
     }
 
     .imgs_right {
         flex: 1 0 40%;
         max-width: 40%;
         margin: 0;
-
-        @include mobile-width() {
-            flex: 1 0 100%;
-            max-width: 100%;
-        }
     }
 }
 
