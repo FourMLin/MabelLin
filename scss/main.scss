@@ -208,6 +208,7 @@ footer {
 
     h2 {
         margin-bottom: 0.5rem;
+        
     }
 }
 
@@ -215,6 +216,7 @@ footer {
     padding: 1rem;
     display: flex;
     flex-wrap: wrap;
+    margin-bottom: 5rem;
 }
 
 .gallery-item {
@@ -350,5 +352,57 @@ footer {
 
 }
 
+%normal{
+    background-color: #ffffff;
+    border: 2px solid #e9e9e9;
+}
+
+.holotile {
+
+    .item-inner {
+        @extend %normal;
+
+        &::after {
+            background-image: url(../img/index-holo.png);
+        }
+    }
+
+}
+
+.publish {
+
+    .item-inner {
+        @extend %normal;
+
+        &::after {
+            background-image: url(../img/index-holo.png);
+        }
+    }
+
+}
+
+.medical {
+
+    .item-inner {
+        @extend %normal;
+
+        &::after {
+            background-image: url(../img/index-holo.png);
+        }
+    }
+
+}
+
+.main-block {
+
+    .item-inner {
+        @extend %normal;
+
+        &::after {
+            background-image: url(../img/index-holo.png);
+        }
+    }
+
+}
 
 @import '_project';
