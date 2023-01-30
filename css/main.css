@@ -709,6 +709,7 @@ footer .material-icons {
 
 .item-wrap .item-img {
   max-width: 650px;
+  margin: auto;
 }
 
 .item-tag {
