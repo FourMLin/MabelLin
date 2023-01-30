@@ -249,12 +249,12 @@ footer {
         z-index: -1;
 
         &.on-down{
-            animation: slide-down 0.4s both ease-in-out;
+            animation: slide-down 0.5s both ease-in-out;
             left: 18%;
         }
 
         &.on-up{
-            animation: slide-up 0.4s both ease-in-out;
+            animation: slide-up 0.5s both ease-in-out;
             right: 16%;
         }
 
@@ -265,11 +265,6 @@ footer {
 }
 
 
-
-
-// .portfolio_list {
-//     padding: 3rem 0;
-// }
 
 .portfolio_list-title {
     text-align: center;
@@ -496,6 +491,10 @@ footer {
 
 .owl-carousel .owl-stage-outer{
     overflow: visible;
+
+    @include mobile-width() {
+       overflow: hidden;
+    }
 }
 
 .owl-dots{

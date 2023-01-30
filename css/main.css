@@ -582,14 +582,14 @@ footer .material-icons {
 }
 
 .background .work_name.on-down {
-  -webkit-animation: slide-down 0.4s both ease-in-out;
-          animation: slide-down 0.4s both ease-in-out;
+  -webkit-animation: slide-down 0.5s both ease-in-out;
+          animation: slide-down 0.5s both ease-in-out;
   left: 18%;
 }
 
 .background .work_name.on-up {
-  -webkit-animation: slide-up 0.4s both ease-in-out;
-          animation: slide-up 0.4s both ease-in-out;
+  -webkit-animation: slide-up 0.5s both ease-in-out;
+          animation: slide-up 0.5s both ease-in-out;
   right: 16%;
 }
 
@@ -777,6 +777,12 @@ footer .material-icons {
 
 .owl-carousel .owl-stage-outer {
   overflow: visible;
+}
+
+@media all and (max-width: 768px) {
+  .owl-carousel .owl-stage-outer {
+    overflow: hidden;
+  }
 }
 
 .owl-dots {
