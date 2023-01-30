@@ -278,7 +278,7 @@ textarea {
 }
 
 .list_container {
-  max-width: 1028px;
+  max-width: 800px;
   margin: 0 auto;
   padding: 1rem 0;
 }
@@ -346,9 +346,14 @@ textarea {
 }
 
 footer {
-  padding: 1rem 2rem;
-  position: relative;
+  position: fixed;
+  width: 100%;
+  bottom: 0;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
   text-align: center;
+  font-size: 12px;
 }
 
 footer .footer_text {
@@ -357,6 +362,12 @@ footer .footer_text {
   display: flex;
   margin: 0 auto;
   padding: 0 16px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 @media all and (max-width: 768px) {
@@ -369,10 +380,9 @@ footer .footer_text p {
   font-size: 12px;
 }
 
-footer .footer_text p:first-child {
-  -webkit-box-flex: 1;
-      -ms-flex: auto;
-          flex: auto;
+footer .material-icons {
+  font-size: 12px;
+  color: #750606;
 }
 
 .landing_page {
@@ -506,8 +516,87 @@ footer .footer_text p:first-child {
   }
 }
 
-.portfolio_list {
-  padding: 3rem 0;
+@-webkit-keyframes slide-down {
+  from {
+    -webkit-transform: translate(-50%, -200%) rotate(90deg);
+            transform: translate(-50%, -200%) rotate(90deg);
+  }
+  to {
+    -webkit-transform: translate(-50%, -80%) rotate(90deg);
+            transform: translate(-50%, -80%) rotate(90deg);
+  }
+}
+
+@keyframes slide-down {
+  from {
+    -webkit-transform: translate(-50%, -200%) rotate(90deg);
+            transform: translate(-50%, -200%) rotate(90deg);
+  }
+  to {
+    -webkit-transform: translate(-50%, -80%) rotate(90deg);
+            transform: translate(-50%, -80%) rotate(90deg);
+  }
+}
+
+@-webkit-keyframes slide-up {
+  from {
+    -webkit-transform: translate(50%, 200%) rotate(90deg);
+            transform: translate(50%, 200%) rotate(90deg);
+  }
+  to {
+    -webkit-transform: translate(50%, 10%) rotate(90deg);
+            transform: translate(50%, 10%) rotate(90deg);
+  }
+}
+
+@keyframes slide-up {
+  from {
+    -webkit-transform: translate(50%, 200%) rotate(90deg);
+            transform: translate(50%, 200%) rotate(90deg);
+  }
+  to {
+    -webkit-transform: translate(50%, 10%) rotate(90deg);
+            transform: translate(50%, 10%) rotate(90deg);
+  }
+}
+
+.background {
+  position: relative;
+  opacity: 0.8;
+}
+
+.background .work_name {
+  position: fixed;
+  font-size: 220px;
+  font-weight: bold;
+  text-align: center;
+  width: 100%;
+  top: 50%;
+  line-height: 1.5;
+  padding: 2rem 0;
+  color: #121111;
+  z-index: 3;
+  -webkit-animation-delay: 0.3s;
+          animation-delay: 0.3s;
+  z-index: -1;
+}
+
+.background .work_name.on-down {
+  -webkit-animation: slide-down 0.4s both ease-in-out;
+          animation: slide-down 0.4s both ease-in-out;
+  left: 18%;
+}
+
+.background .work_name.on-up {
+  -webkit-animation: slide-up 0.4s both ease-in-out;
+          animation: slide-up 0.4s both ease-in-out;
+  right: 16%;
+}
+
+@media all and (max-width: 768px) {
+  .background .work_name {
+    opacity: 0.1;
+  }
 }
 
 .portfolio_list-title {
@@ -540,11 +629,6 @@ footer .footer_text p:first-child {
   .gallery-item {
     padding: 1rem 0rem;
   }
-}
-
-.gallery-item:hover {
-  -webkit-transform: scale(1.02);
-          transform: scale(1.02);
 }
 
 .item-inner {
@@ -604,6 +688,27 @@ footer .footer_text p:first-child {
 
 .item-inner .item-content h4 {
   margin-bottom: 0.5rem;
+}
+
+.item-wrap {
+  text-align: center;
+  display: block;
+  position: relative;
+  z-index: 2;
+}
+
+.item-wrap h2 {
+  line-height: 1.5;
+}
+
+.item-wrap .item-logo {
+  width: 50px;
+  margin: 0 auto;
+  margin-bottom: 0.5rem;
+}
+
+.item-wrap .item-img {
+  max-width: 650px;
 }
 
 .item-tag {
@@ -668,6 +773,28 @@ footer .footer_text p:first-child {
 
 .main-block .item-inner::after {
   background-image: url(../img/index-holo.png);
+}
+
+.owl-carousel .owl-stage-outer {
+  overflow: visible;
+}
+
+.owl-dots {
+  margin: 0 auto;
+  width: 100%;
+  text-align: center;
+}
+
+.owl-carousel button.owl-dot {
+  background-color: #d0d0d0;
+  width: 40px;
+  height: 5px;
+  border-radius: 99em;
+  margin: 0 2px;
+}
+
+.owl-carousel button.owl-dot.active {
+  background-color: #750606;
 }
 
 @font-face {
