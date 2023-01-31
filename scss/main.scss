@@ -260,12 +260,12 @@ footer {
 
         &.on-down{
             animation: slide-down 0.5s both ease-in-out;
-            left: 18%;
+            left: 14%;
         }
 
         &.on-up{
             animation: slide-up 0.5s both ease-in-out;
-            right: 16%;
+            right: 12%;
         }
 
         @include mobile-width() {
@@ -382,7 +382,7 @@ footer {
     }
 
     .item-img{
-        max-width: 650px;
+        max-width: 600px;
         margin: auto;
     }
 }
@@ -518,7 +518,7 @@ footer {
     background-color: $pale-gray;
     width: 40px;
     height: 5px;
-    border-radius: 99em;
+    border-radius:  0 0 99em 99em;
     margin: 0 2px;
 
     &.active{
