@@ -61,7 +61,7 @@ h2 {
 }
 
 h3 {
-  font-size: 26px;
+  font-size: 28px;
 
   @include mobile-width() {
     font-size: 24px;
@@ -85,8 +85,8 @@ h5 {
 }
 
 p {
-  line-height: 1.7;
-  letter-spacing: .5px;
+  line-height: 1.5;
+  letter-spacing: .2px;
   font-size: 16px;
   margin: 0;
   padding: 0;
