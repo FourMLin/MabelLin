@@ -3,6 +3,7 @@
 
 .wrapper {
     position: relative;
+
 }
 
 .container {
@@ -84,6 +85,11 @@ footer {
 
     &.fix_footer{
         position: fixed;
+    }
+
+    &.darkmod{
+        background-color: #141414;
+        color: $white;
     }
     
 

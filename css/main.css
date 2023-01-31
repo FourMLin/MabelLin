@@ -64,6 +64,15 @@ h6 {
   margin: 0;
 }
 
+h1.color-red,
+h2.color-red,
+h3.color-red,
+h4.color-red,
+h5.color-red,
+h6.color-red {
+  color: #750606;
+}
+
 h1 {
   font-size: 36px;
 }
@@ -358,6 +367,11 @@ footer {
 
 footer.fix_footer {
   position: fixed;
+}
+
+footer.darkmod {
+  background-color: #141414;
+  color: #ffffff;
 }
 
 footer .footer_text {
@@ -948,7 +962,7 @@ footer .material-icons {
 }
 
 .main_title.iot {
-  background-image: url(../img//future/0.png);
+  background-image: url(../img/iot-0.jpg);
 }
 
 .main_title .title_text {
@@ -1008,7 +1022,7 @@ footer .material-icons {
 
 .project_text p {
   margin-top: 1rem;
-  margin-bottom: 2rem;
+  margin-bottom: 1rem;
 }
 
 .project_text .all_img {
@@ -1289,5 +1303,38 @@ footer .material-icons {
 
 .img-text-wrap .img-text-vertical .img-text-vertical-text h5 {
   margin-top: 1rem;
+}
+
+.tab .tab_list {
+  border-bottom: 1px solid #121111;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.tab .tab_list li {
+  padding: 12px 32px;
+  font-weight: bold;
+  border-radius: 4px 4px 0 0;
+}
+
+.tab .tab_list li.active {
+  border: 1px solid #ffffff;
+  border-bottom: 0;
+}
+
+.tab.darkmod {
+  color: #ffffff;
+}
+
+.tab.darkmod .tab_list {
+  border-bottom: 1px solid #ffffff;
+}
+
+.tab.darkmod .tab_list li a {
+  color: #ffffff;
 }
 /*# sourceMappingURL=main.css.map */
