@@ -95,6 +95,7 @@
             <ul class="tab_list">
               <li><a href="#tab1">N8 air purifier</a></li>
               <li><a href="#tab2">Smart Wok</a></li>
+              <li><a href="#tab3">Fregrancy</a></li>
             </ul>
             <div class="tab_content_wrap">
               <div id="tab1" class="tab_content">
@@ -198,7 +199,24 @@
                 </div>
               </div>
               <div id="tab2" class="tab_content">
-                456
+                <div class="project_text">
+                  <h3>Smart Wok</h3>
+                </div>
+                <div class="project_img whole-img">
+                  <div class="all_img">
+                    <img src="img/iot-4.png" alt="">
+                  </div>
+                </div>
+              </div>
+              <div id="tab3" class="tab_content">
+                <div class="project_text">
+                  <h3>Fregrancy</h3>
+                </div>
+                <div class="project_img whole-img">
+                  <div class="all_img">
+                    <img src="img/iot-3.png" alt="">
+                  </div>
+                </div>
               </div>
             </div>
           </div>
@@ -236,8 +254,11 @@
   <script type="text/javascript" src="js/homepage.js"></script>
   <script type="text/javascript"></script>
   <script>
-    $(".tab_list li a").click(function (e) {
-      e.preventDefault();
+    $('a[href*="\\#"]').click(function(event){
+        $('html, body').animate({
+            scrollTop: $( $.attr(this, 'href') ).offset().top-$('.at-navbar').height() - top_header_height
+        }, 1000);
+        event.preventDefault();
     });
   </script>
   <script>
