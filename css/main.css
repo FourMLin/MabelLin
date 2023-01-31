@@ -346,7 +346,7 @@ textarea {
 }
 
 footer {
-  position: fixed;
+  position: relative;
   width: 100%;
   bottom: 0;
   left: 50%;
@@ -354,6 +354,10 @@ footer {
           transform: translateX(-50%);
   text-align: center;
   font-size: 12px;
+}
+
+footer.fix_footer {
+  position: fixed;
 }
 
 footer .footer_text {

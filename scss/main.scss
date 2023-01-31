@@ -74,13 +74,17 @@
 
 
 footer {
-    position: fixed;
+    position: relative;
     width: 100%;
     bottom: 0;
     left: 50%;
     transform: translateX(-50%);
     text-align: center;
     font-size: 12px;
+
+    &.fix_footer{
+        position: fixed;
+    }
     
 
     .footer_text {
