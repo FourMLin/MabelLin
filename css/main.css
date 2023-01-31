@@ -965,6 +965,10 @@ footer .material-icons {
   background-image: url(../img/iot-0.jpg);
 }
 
+.main_title.holo {
+  background-image: url(../img/h-0.png);
+}
+
 .main_title .title_text {
   color: #ffffff;
   padding: 1rem;
