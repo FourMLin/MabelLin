@@ -969,6 +969,10 @@ footer .material-icons {
   background-image: url(../img/h-0.png);
 }
 
+.main_title.publish {
+  background-image: url(../img/p-0.jpg);
+}
+
 .main_title .title_text {
   color: #ffffff;
   padding: 1rem;
