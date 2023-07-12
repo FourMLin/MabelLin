@@ -5,6 +5,31 @@
     margin: 0 auto;
 }
 
+.home{
+    position: fixed;
+    z-index: 11;
+
+    a{
+        display: block;
+        background-color: $red;
+        width: 30px;
+        height: 30px;
+        border-radius: 99em;
+
+        &:hover{
+            background-color: $g-main;
+        }
+    }
+
+    svg{
+        fill: $white;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+}
+
 .project-wrap {
     padding: 3rem 1rem;
 
@@ -490,4 +515,5 @@
 
     
 }
+
 

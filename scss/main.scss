@@ -83,15 +83,15 @@ footer {
     text-align: center;
     font-size: 12px;
 
-    &.fix_footer{
+    &.fix_footer {
         position: fixed;
     }
 
-    &.darkmod{
+    &.darkmod {
         background-color: #141414;
         color: $white;
     }
-    
+
 
     .footer_text {
         display: flex;
@@ -110,7 +110,7 @@ footer {
         }
     }
 
-    .material-icons{
+    .material-icons {
         font-size: 12px;
         color: $red;
     }
@@ -258,12 +258,12 @@ footer {
         animation-delay: 0.3s;
         z-index: -1;
 
-        &.on-down{
+        &.on-down {
             animation: slide-down 0.5s both ease-in-out;
             left: 14%;
         }
 
-        &.on-up{
+        &.on-up {
             animation: slide-up 0.5s both ease-in-out;
             right: 12%;
         }
@@ -357,6 +357,7 @@ footer {
     }
 
     .item-content {
+        
 
         h4 {
             margin-bottom: 0.5rem;
@@ -365,13 +366,13 @@ footer {
 
 }
 
-.item-wrap{
+.item-wrap {
     text-align: center;
     display: block;
     position: relative;
     z-index: 2;
 
-    h2{
+    h2 {
         line-height: 1.5;
     }
 
@@ -381,7 +382,7 @@ footer {
         margin-bottom: 0.5rem;
     }
 
-    .item-img{
+    .item-img {
         max-width: 600px;
         margin: auto;
     }
@@ -500,29 +501,211 @@ footer {
 
 }
 
-.owl-carousel .owl-stage-outer{
+.owl-carousel .owl-stage-outer {
     overflow: visible;
 
     @include mobile-width() {
-       overflow: hidden;
+        overflow: hidden;
     }
 }
 
-.owl-dots{
+.owl-dots {
     margin: 0 auto;
     width: 100%;
     text-align: center;
 }
 
-.owl-carousel button.owl-dot{
+.owl-carousel button.owl-dot {
     background-color: $pale-gray;
     width: 40px;
     height: 5px;
-    border-radius:  0 0 99em 99em;
+    border-radius: 0 0 99em 99em;
     margin: 0 2px;
 
-    &.active{
+    &.active {
         background-color: $red;
+    }
+}
+
+.owl-nav {
+
+    .owl-prev,
+    .owl-next {
+        font-size: 200px !important;
+        color: $pale-gray !important;
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+
+        &:hover,
+        &:active {
+            color: $red !important;
+        }
+    }
+
+    .owl-prev {
+        left: 0%;
+    }
+
+    .owl-next {
+        right: 0%;
+    }
+
+    @include mobile-width() {
+        display: none
+    }
+}
+
+.loading_bg {
+    background-color: $white-gray;
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 5;
+}
+
+.loading {
+
+
+    .loading-bar {
+        background-color: $pale-gray;
+        border-radius: 99em;
+        width: 100%;
+        height: 3px;
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+
+    }
+
+    #loading-progress {
+        background-color: $red;
+        // border-radius: 99em;
+        width: 0%;
+        height: 3px;
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        // 
+
+        &.spread {
+            animation: progress .5s 1 ease-out forwards;
+            animation-delay: 2s;
+        }
+    }
+}
+
+@keyframes progress {
+    from {
+        height: 3px;
+    }
+
+    to {
+        height: 100vh;
+    }
+}
+
+.service {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+
+    a {
+        display: inline-block;
+        margin: 0;
+        width: 50%;
+    }
+
+    .service-text {
+        background-color: $white-gray;
+        padding: 16px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        height: 100%;
+        color: $white;
+    }
+
+    .art {
+        text-align: right;
+
+        .service-text {
+            background-color: rgba($color: $black, $alpha: 0.5);
+
+            &:hover {
+                background-color: rgba($color: $white, $alpha: 0.2);
+            }
+        }
+    }
+
+
+    .ux {
+        .service-text {
+            background-color: rgba($color: $black, $alpha: 0.8);
+
+            &:hover {
+                background-color: rgba($color: $white, $alpha: 0.05);
+            }
+        }
+    }
+
+
+
+
+    // .ui{
+    //     width: 0;
+    //     height: 0;
+    //     border-top: 40vw solid $red;
+    //     border-right: 40vw solid transparent;
+    //     border-left: 40vw solid transparent;
+    // }
+}
+
+.item-masonry {
+    width: 100%;
+    margin: 0px auto;
+    column-count: 3;
+    column-gap: 0px;
+
+    .item {
+        padding: 2px;
+        box-sizing: border-box;
+        margin: 0 auto;
+        break-inside: avoid;
+
+        img {
+            width: 100%;
+            object-fit: cover;
+            object-position: 50% 50%;
+      }
+    }
+    
+}
+
+.item-square{
+    display: flex;
+    flex-wrap: wrap;
+
+    .item{
+        flex: 1 0 32%;
+        max-width: 32%;
+        padding: 4px;
+
+        @include mobile-width(){
+            flex: 1 0 100%;
+        max-width: 100%;
+        }
+
+        .item-inner{
+            background-color: $white;
+            border-radius: 4px;
+            box-shadow: 2px 2px 6px rgba($color: $pale-gray, $alpha: 0.5);
+        }
+        
+        
     }
 }
 
