@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width,maximum-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <meta name="robots" content="noindex">
+  <meta name="googlebot" content="noindex">
+  <meta name="description" content="This is Lin Yi-Ting's portfolio, Hope you enjoy my work.">
+  <meta property="article:author" content="Lin Yi-Ting">
+  <meta property="article:publisher" content="Lin Yi-Ting">
+  <meta property="og:title" content="LyT | Portfolio">
+  <meta property="og:url" content="https://fourmlin.github.io/Lytdesign/">
+  <meta property="og:image" content="">
+  <meta property="og:description" content="This is Lin Yi-Ting's portfolio, Hope you enjoy my work.">
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="LyT Portfolio">
+  <title>LyT | Portfolio</title>
+  <link rel="icon" type="image/x-icon" href="img/favicon.ico">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link rel="stylesheet" href="css/main.css">
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-Y34T7EREGC"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+
+    function gtag() {
+      dataLayer.push(arguments);
+    }
+    gtag('js', new Date());
+
+    gtag('config', 'G-Y34T7EREGC');
+  </script>
+</head>
+
+<body class="loading_bg">
+  <main>
+    <div class="loading">
+      <div class="loading-bar"></div>
+    </div>
+    <div class="service">
+      <a href="index-art.html" class="service-item art">
+        <div class="service-text">
+          <h3>Art work</h3>
+          <p>Banners/Commercial art/Illustrate/Others</p>
+        </div>
+
+      </a>
+
+      <a href="index-ux.html" class="service-item ux">
+        <div class="service-text">
+          <h3>User Experience and Interface</h3>
+          <p>Including Web/App/service/society/future experience work</p>
+        </div>
+
+      </a>
+      
+    </div>
+
+
+  </main>
+
+  <!-- <div class="wrapper">
+
+    <footer class="fix_footer">
+      <div class="container">
+        <div class="footer_text">
+          <p>copyright © 2017-2023 Mabel Lin.</p> &nbsp;
+          <span class="material-icons">
+            local_post_office
+          </span>:doublemudouble@gmail.com  &nbsp; <span class="material-icons">
+            call
+          </span>:0910638805
+          
+        </div>
+      </div>
+    </footer>
+
+
+  </div> -->
+  <script src="https://code.jquery.com/jquery-3.4.1.js" integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU="
+    crossorigin="anonymous"></script>
+  <script type="text/javascript" src="js/homepage.js"></script>
+  <script type="text/javascript"></script>
+  <script src="js/jquery.mousewheel.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+  <!-- <script>
+      $(window).bind("load", function () {
+        $('#work-in-progress').fadeOut(1000);
+    });
+  </script> -->
+  <script>
+    // var elems = $(".service-item");
+    $(".service-item").hide();
+    $(document).ready(function (i) {
+      $('.loading-bar').append('<div id="loading-progress"></div>');
+      var progress = '100%';
+      $('#loading-progress').animate({
+        width: progress,
+      }, 2000);
+      $("#loading-progress").addClass('spread');
+      // elems.hide();
+      // $(elems[i]).delay(2500 + 300 * (i + 1)).fadeIn(1500);
+
+
+
+    });
+
+    var elems = $(".service-item");
+    function panelIn(divNumber) {
+      $(elems[divNumber]).delay(300 * (divNumber + 1) + 2500).fadeIn(1000);
+
+    }
+    panelIn(0);
+    panelIn(1);
+    panelIn(2);
+  </script>
+
+
+</body>
+
+</html>
