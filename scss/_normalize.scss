@@ -11,8 +11,9 @@ body {
   overflow-y: scroll;
   width: 100%;
   font-family: 'LucidaGrande', 'Noto Sans TC', "Helvetica Neue", Helvetica, Arial;
-  background: $white-gray;
+  background: $background;
   font-size: 16px;
+  color: $white;
 
   @include mobile-width() {
     font-size: 14px;
@@ -24,12 +25,12 @@ main {
 }
 
 ::selection {
-  background: $black;
+  background: $main;
   color: $white;
 }
 
 ::-moz-selection {
-  background: $black;
+  background: $main;
   color: $white;
 }
 
@@ -44,7 +45,7 @@ h6 {
   margin: 0;
 
   &.color-red{
-    color: $red;
+    color: $main;
   }
 }
 
@@ -116,7 +117,7 @@ a {
 
     &:hover {
       color: $white;
-      text-decoration: underline;
+      // text-decoration: underline;
     }
   }
 }

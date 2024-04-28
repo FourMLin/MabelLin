@@ -11,13 +11,13 @@
 
     a{
         display: block;
-        background-color: $red;
+        background-color: $main;
         width: 30px;
         height: 30px;
         border-radius: 99em;
 
         &:hover{
-            background-color: $g-main;
+            background-color: $light;
         }
     }
 
@@ -34,7 +34,7 @@
     padding: 3rem 1rem;
 
     &.darkmod {
-        background-color: #141414;
+        background-color: $background;
         color: $white;
     }
 
@@ -47,7 +47,7 @@
         line-height: 1.2;
 
         span {
-            color: $red;
+            color: $main;
             font-size: 16px;
         }
     }
@@ -351,7 +351,7 @@
 
     .quote {
         padding-left: 1.5rem;
-        border-left: 5px solid $red;
+        border-left: 5px solid $main;
         line-height: 2;
         margin: 15px 0;
 
@@ -514,6 +514,48 @@
     }
 
     
+}
+
+.me-head{
+    display: flex;
+    position: relative;
+    justify-content: space-between;
+    // background: url(../img/me.jpg) right no-repeat;
+
+    .me-text{
+        max-width: 50%;
+        padding: 0 30px;
+    }
+
+    .me-img{
+        margin-top: -20%;
+    }
+
+    .me-link{
+        display: flex;
+        margin-top: 16px;
+
+        li{
+            margin: 0 8px;
+
+            &:first-child{
+                margin-left: 0;
+            }
+            
+            a{
+                display: block;
+                padding: 4px;
+                background-color: $gray;
+                border-radius: 4px;
+                width: 24px;
+                height: 24px;
+
+                &:hover{
+                    background-color: $main;
+                }
+            }
+        }
+    }
 }
 
 

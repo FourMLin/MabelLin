@@ -30,13 +30,15 @@
     <header>
       <div class="mabel_head">
         <div class="mabel_logo">
-          <a href="https://mabellin.com">
-            <img src="img/M_logo.svg" alt="">
+          <a href="index.html">
+            <img src="img/M_logo_p.svg" alt="">
           </a>
         </div>
         <nav id="nav">
           <ul>
-            <!-- <li class="active"><a href="https://mabellin.com">Portfolio</a></li> -->
+            <li class="active"><a class="white_link" href="https://mabellin.com">Portfolio</a></li>
+            <li class=""><a class="white_link" href="About.html">About</a></li>
+            <li class=""><a class="white_link" href="https://medium.com/@mabellin.">Article</a></li>
           </ul>
         </nav>
       </div>
@@ -239,12 +241,8 @@
   <footer class="darkmod">
     <div class="container">
       <div class="footer_text">
-        <p>copyright © 2017-2023 Mabel Lin.</p> &nbsp;
-        <span class="material-icons">
-          local_post_office
-        </span>:doublemudouble@gmail.com &nbsp; <span class="material-icons">
-          call
-        </span>:0910638805
+        <p>copyright © 2024 Mabel Lin.</p> &nbsp;
+
 
       </div>
     </div>
@@ -254,11 +252,11 @@
   <script type="text/javascript" src="js/homepage.js"></script>
   <script type="text/javascript"></script>
   <script>
-    $('a[href*="\\#"]').click(function(event){
-        $('html, body').animate({
-            scrollTop: $( $.attr(this, 'href') ).offset().top-$('.at-navbar').height() - top_header_height
-        }, 1000);
-        event.preventDefault();
+    $('a[href*="\\#"]').click(function (event) {
+      $('html, body').animate({
+        scrollTop: $($.attr(this, 'href')).offset().top - $('.at-navbar').height() - top_header_height
+      }, 1000);
+      event.preventDefault();
     });
   </script>
   <script>
@@ -266,7 +264,7 @@
     $('.tab_list li:first-child').addClass('active');
     $('.tab_content').hide();
     $('.tab_content:first').show();
-    
+
 
     // Click function
     $('.tab_list li').click(function () {
