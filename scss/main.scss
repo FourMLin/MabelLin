@@ -41,11 +41,18 @@
 
 video{
     position: fixed;
-    top: -20%;
+    top: 50%;
     left: 0;
+    transform: translateY(-70%);
     width: 100%;
     z-index: -5;
     opacity: 0.9;
+}
+
+header{
+    position: relative;
+    height: 94px;
+    width: 100%;
 }
 
 
@@ -54,6 +61,8 @@ video{
     display: flex;
     padding: 2rem;
     color: $white;
+    position: fixed;
+    width: 100%;
 
     nav {
         ul {
@@ -301,6 +310,16 @@ footer {
             margin-top: 16px;
             font-weight: normal;
         }
+
+        @include  pad-width(){
+            h2{
+                font-size: 30px;
+            }
+
+            p{
+                font-size: 20px;
+            }
+        }
     }
 }
 
@@ -461,16 +480,16 @@ footer {
 .owl-dots {
     margin: 0 auto;
     width: 100%;
-    text-align: end;
+    text-align: center;
     transition: 0.3s;
 }
 
 .owl-carousel button.owl-dot {
     background-color: $pale-gray;
-    width: 10%;
-    height: 1px;
-    border-radius: 0 0 99em 99em;
-    margin: 0px;
+    width: 10px;
+    height: 10px;
+    border-radius: 2px;
+    margin: 8px;
 
     &.active {
         background-color: $main;
@@ -525,9 +544,10 @@ footer {
 
 .owl-carousel .owl-item img {
     transition: .3s;
+    margin: auto;
 
     @include pad-width() {
-        width: 80%;
+        width: 90%;
     }
 }
 

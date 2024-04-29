@@ -347,11 +347,19 @@ textarea {
 
 video {
   position: fixed;
-  top: -20%;
+  top: 50%;
   left: 0;
+  -webkit-transform: translateY(-70%);
+          transform: translateY(-70%);
   width: 100%;
   z-index: -5;
   opacity: 0.9;
+}
+
+header {
+  position: relative;
+  height: 94px;
+  width: 100%;
 }
 
 .mabel_head {
@@ -361,6 +369,8 @@ video {
   display: flex;
   padding: 2rem;
   color: #ffffff;
+  position: fixed;
+  width: 100%;
 }
 
 .mabel_head nav ul li {
@@ -609,6 +619,15 @@ footer .material-icons {
   font-weight: normal;
 }
 
+@media all and (max-width: 1099px) {
+  .item-wrap .item-content h2 {
+    font-size: 30px;
+  }
+  .item-wrap .item-content p {
+    font-size: 20px;
+  }
+}
+
 .owl-item {
   opacity: 0.3;
 }
@@ -710,17 +729,17 @@ footer .material-icons {
 .owl-dots {
   margin: 0 auto;
   width: 100%;
-  text-align: end;
+  text-align: center;
   -webkit-transition: 0.3s;
   transition: 0.3s;
 }
 
 .owl-carousel button.owl-dot {
   background-color: #d0d0d0;
-  width: 10%;
-  height: 1px;
-  border-radius: 0 0 99em 99em;
-  margin: 0px;
+  width: 10px;
+  height: 10px;
+  border-radius: 2px;
+  margin: 8px;
 }
 
 .owl-carousel button.owl-dot.active {
@@ -775,11 +794,12 @@ footer .material-icons {
 .owl-carousel .owl-item img {
   -webkit-transition: .3s;
   transition: .3s;
+  margin: auto;
 }
 
 @media all and (max-width: 1099px) {
   .owl-carousel .owl-item img {
-    width: 80%;
+    width: 90%;
   }
 }
 
