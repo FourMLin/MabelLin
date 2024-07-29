@@ -1138,6 +1138,10 @@ footer .material-icons {
   }
 }
 
+.main_title.craftmind {
+  background-image: url(../img/cm-0.jpg);
+}
+
 .main_title.triplei {
   background-image: url(../img/T-n-0.png);
 }
