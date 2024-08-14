@@ -163,6 +163,7 @@ a {
 
 a.white_link {
   color: #ffffff;
+  text-decoration: underline;
 }
 
 a.white_link:hover {
