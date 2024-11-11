@@ -12,11 +12,11 @@ body {
   width: 100%;
   font-family: 'LucidaGrande', 'Noto Sans TC', "Helvetica Neue", Helvetica, Arial;
   background: $background;
-  font-size: 16px;
-  color: $white;
+  font-size: 18px;
+  line-height: 1.5;
 
   @include mobile-width() {
-    font-size: 14px;
+    font-size: 16px;
   }
 }
 
@@ -91,19 +91,18 @@ h5 {
 
 p {
   line-height: 1.5;
-  letter-spacing: .2px;
-  font-size: 16px;
+  font-size: 18px;
   margin: 0;
   padding: 0;
 
   &.note {
     color: $gray;
-    font-size: 14px;
+    font-size: 16px;
   }
 
   &.secret{
     color: $gray;
-    font-size: 12px;
+    font-size: 14px;
     margin-top: 0.5rem;
   }
 }

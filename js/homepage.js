@@ -15,5 +15,3 @@ $(document).ready(function() {
   });
 });
 
-document.oncontextmenu = new Function("return false");
-    oncontextmenu = "return false;"

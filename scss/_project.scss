@@ -111,8 +111,8 @@
 
 .main_title {
     width: 100%;
-    height: 550px;
-    max-height: 550px;
+    height: 300px;
+    max-height: 300px;
     display: flex;
     background-size: cover;
     background-repeat: no-repeat;
@@ -148,6 +148,9 @@
 
     &.publish {
         background-image: url(../img/p-0.jpg);
+    }
+    &.teller {
+        background-image: url(../img/tell-0.jpg);
     }
 
     .title_text {
@@ -535,31 +538,7 @@
         margin-top: -20%;
     }
 
-    .me-link{
-        display: flex;
-        margin-top: 16px;
-
-        li{
-            margin: 0 8px;
-
-            &:first-child{
-                margin-left: 0;
-            }
-            
-            a{
-                display: block;
-                padding: 4px;
-                background-color: $gray;
-                border-radius: 4px;
-                width: 24px;
-                height: 24px;
-
-                &:hover{
-                    background-color: $main;
-                }
-            }
-        }
-    }
+    
 }
 
 
