@@ -160,6 +160,11 @@ a {
   text-decoration: none;
 }
 
+a.main_link {
+  color: #384B6F;
+  text-decoration: underline;
+}
+
 a.white_link {
   color: #ffffff;
   text-decoration: underline;
