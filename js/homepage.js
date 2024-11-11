@@ -15,3 +15,7 @@ $(document).ready(function() {
   });
 });
 
+$(".mabel_logo").hover(function () {
+  $(this).addClass('animate__animated animate__headShake animate__infinite');
+})
+

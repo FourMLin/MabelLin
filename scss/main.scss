@@ -56,6 +56,10 @@
     width: 25%;
     max-width: 25%;
 
+    &:nth-of-type(odd) {
+        margin-top: -30px;
+    }
+
     @include pad-width() {
         flex: 1 0 50%;
         width: 50%;
@@ -67,9 +71,10 @@
         width: 100%;
         max-width: 100%;
     }
+
 }
 
-video{
+video {
     position: fixed;
     top: 50%;
     left: 0;
@@ -79,7 +84,7 @@ video{
     opacity: 0.9;
 }
 
-header{
+header {
     position: relative;
     width: 100%;
 }
@@ -107,9 +112,9 @@ header{
                     padding: 1rem;
                 }
 
-                &.menu{
+                &.menu {
                     a {
-    
+
                         &:hover {
                             text-decoration: underline;
                         }
@@ -120,25 +125,30 @@ header{
     }
 }
 
+
+
+
+
 .mabel_logo {
     // flex: auto;
     // margin-right: 16px;
-
     a {
         display: block;
         width: 30px;
         margin: 0 auto;
     }
+
 }
+
 
 .landing_page {
     // height: 50vh;
 
-    .container{
+    .container {
         display: flex;
         flex-direction: column;
         align-items: center;
-        padding: 3rem 1rem 5rem;
+        padding: 1rem 1rem 4rem;
     }
 
     h2 {
@@ -149,7 +159,7 @@ header{
 
     }
 
-    .sub_title{
+    .sub_title {
         font-weight: bold;
         font-size: 20px;
         width: 60%;
@@ -162,18 +172,18 @@ header{
     //     border-bottom: 2px solid $main;
     // }
 
-    .me-link{
+    .me-link {
         display: flex;
         margin-top: 16px;
 
-        li{
+        li {
             margin: 0 8px;
 
-            &:first-child{
+            &:first-child {
                 margin-left: 0;
             }
-            
-            a{
+
+            a {
                 display: block;
                 padding: 4px;
                 // background-color: $gray;
@@ -284,7 +294,7 @@ footer {
     z-index: 2;
     height: 240px;
     max-height: 240px;
-    
+
 
     @include mobile-width() {
         padding: 1.5rem 1.5rem;
@@ -293,7 +303,7 @@ footer {
 
     &::after {
         content: "";
-        background-position: right top ;
+        background-position: right top;
         background-repeat: no-repeat;
         background-size: cover;
         position: absolute;
@@ -311,9 +321,9 @@ footer {
         }
     }
 
-    &:hover{
+    &:hover {
 
-        &::after{
+        &::after {
             transform: scale(1.05);
             // box-shadow: 0px 0px 8px rgba($color: $black, $alpha: 0.8);
         }
@@ -381,9 +391,9 @@ footer {
         transform: translate(-50%, -50%);
         z-index: 6;
         font-family: "Cinzel", serif;
-            font-optical-sizing: auto;
-            
-            font-style: normal;
+        font-optical-sizing: auto;
+
+        font-style: normal;
 
         .item-number {
 
@@ -406,18 +416,18 @@ footer {
             text-shadow: 2px 2px 16px #000;
         }
 
-        p{
+        p {
             font-size: 26px;
             margin-top: 16px;
             font-weight: normal;
         }
 
-        @include  pad-width(){
-            h2{
+        @include pad-width() {
+            h2 {
                 font-size: 30px;
             }
 
-            p{
+            p {
                 font-size: 20px;
             }
         }
@@ -483,7 +493,7 @@ footer {
 .smarthome-app {
 
     .item-inner {
-    
+
         &::after {
             background-image: url(../img/index-iot.jpg);
         }
