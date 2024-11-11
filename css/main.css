@@ -435,6 +435,12 @@ header {
           align-items: center;
 }
 
+@media all and (max-width: 768px) {
+  .mabel_head {
+    padding: 1rem 0;
+  }
+}
+
 .mabel_head nav ul {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -522,6 +528,15 @@ header {
   border-radius: 4px;
   width: 24px;
   height: 24px;
+}
+
+@media all and (max-width: 768px) {
+  .landing_page h2 {
+    font-size: 30px;
+  }
+  .landing_page .sub_title {
+    font-size: 18px;
+  }
 }
 
 footer {
@@ -1145,6 +1160,8 @@ footer .material-icons {
 
 .project-wrap {
   padding: 3rem 1rem;
+  margin: 0 auto;
+  max-width: 1024px;
 }
 
 .project-wrap.darkmod {

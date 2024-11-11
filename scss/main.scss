@@ -106,6 +106,10 @@ header {
     justify-content: center;
     align-items: center;
 
+    @include mobile-width() {
+        padding: 1rem 0;;
+    }
+
     nav {
         ul {
             display: flex;
@@ -200,6 +204,16 @@ header {
                 //     background-color: $main;
                 // }
             }
+        }
+    }
+
+    @include mobile-width() {
+        h2{
+            font-size: 30px;
+        }
+
+        .sub_title{
+            font-size: 18px;
         }
     }
 }
