@@ -54,7 +54,7 @@
 }
 
 .lore-title {
-    margin-bottom: 2rem;
+    margin-bottom: 1rem;
 }
 
 .project_lore {
@@ -532,6 +532,10 @@
     .me-text{
         max-width: 50%;
         padding: 0 30px;
+
+        h4{
+             margin: 2rem 0 1rem;   
+        }
     }
 
     

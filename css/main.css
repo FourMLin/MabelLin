@@ -1168,7 +1168,7 @@ footer .material-icons {
 }
 
 .lore-title {
-  margin-bottom: 2rem;
+  margin-bottom: 1rem;
 }
 
 .project_lore {
@@ -1668,5 +1668,9 @@ footer .material-icons {
 .me-head .me-text {
   max-width: 50%;
   padding: 0 30px;
+}
+
+.me-head .me-text h4 {
+  margin: 2rem 0 1rem;
 }
 /*# sourceMappingURL=main.css.map */
