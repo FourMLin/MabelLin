@@ -64,12 +64,18 @@
         flex: 1 0 50%;
         width: 50%;
         max-width: 50%;
+
+        
     }
 
     @include mobile-width() {
         flex: 1 0 100%;
         width: 100%;
         max-width: 100%;
+
+        &:nth-of-type(odd) {
+            margin-top: 0px;
+        }
     }
 
 }
@@ -142,7 +148,7 @@ header {
 
 
 .landing_page {
-    // height: 50vh;
+    text-align: center;
 
     .container {
         display: flex;
@@ -163,14 +169,13 @@ header {
         font-weight: bold;
         font-size: 20px;
         width: 60%;
-        text-align: center;
         margin-bottom: 30px;
         color: $gray;
-    }
 
-    // .state{
-    //     border-bottom: 2px solid $main;
-    // }
+        @include mobile-width() {
+            width: 100%;
+        }
+    }
 
     .me-link {
         display: flex;
@@ -299,6 +304,7 @@ footer {
     @include mobile-width() {
         padding: 1.5rem 1.5rem;
         padding-bottom: 10rem;
+        height: auto;
     }
 
     &::after {

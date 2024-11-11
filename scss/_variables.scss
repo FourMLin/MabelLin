@@ -27,7 +27,7 @@ $min-media:414px;
 }
 
 @mixin pad-width() {
-    @media all and (max-width: $pc-media) {
+    @media all and (max-width: $padb-media) {
         @content;
     }
 }
