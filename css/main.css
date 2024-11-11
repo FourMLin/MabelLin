@@ -409,7 +409,6 @@ video {
 
 header {
   position: relative;
-  height: 94px;
   width: 100%;
 }
 
@@ -447,7 +446,7 @@ header {
 }
 
 .mabel_head nav ul li.menu a:hover {
-  border-bottom: 5px solid #384B6F;
+  text-decoration: underline;
 }
 
 .mabel_logo a {

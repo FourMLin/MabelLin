@@ -81,7 +81,6 @@ video{
 
 header{
     position: relative;
-    height: 94px;
     width: 100%;
 }
 
@@ -110,10 +109,9 @@ header{
 
                 &.menu{
                     a {
-                       
     
                         &:hover {
-                            border-bottom: 5px solid $main;
+                            text-decoration: underline;
                         }
                     }
                 }
