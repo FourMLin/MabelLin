@@ -58,9 +58,11 @@
       <div class="landing_page">
         <div class="container">
           <h2 class="animate__animated animate__fadeInUp">Hi, I'm Mabel Lin</h2>
-          <p class="sub_title animate__animated animate__fadeInUp animate__delay-.5s	">A versatile UX designer and developer with 5+ years of experience leveraged
+          <p class="sub_title animate__animated animate__fadeInUp animate__delay-.5s	">A versatile UX designer and
+            developer with 5+ years of experience leveraged
             multidisciplinary expertise gained from a foundation in service design and startup background.</p>
-          <p class="state animate__animated animate__fadeInUp animate__delay-1s">Currently looking for UX designer opportunities base in Singapore 🙋‍♀️</p>
+          <p class="state animate__animated animate__fadeInUp animate__delay-1s">Currently looking for UX designer
+            opportunities base in Singapore 🙋‍♀️</p>
           <ul class="me-link state animate__animated animate__fadeInUp animate__delay-1s">
             <li><a href="https://www.linkedin.com/in/imabellin/">
                 <img src="img/icon-linkedin.svg" alt="">
@@ -207,8 +209,13 @@
     $("#nav li").on('click', function () {
       $(this).addClass('active').siblings().removeClass('active');
     });
-
     
+
+    $(".me-link li").hover(function () {
+      $(this).addClass('animate__animated animate__shakeY');
+    }, function () {
+      $(this).removeClass('animate__animated animate__shakeY');
+    });
   </script>
 
 
