@@ -1200,9 +1200,20 @@ footer .material-icons {
   margin-bottom: 3rem;
 }
 
+.project_lore .lore-item h4 {
+  margin-bottom: 8px;
+}
+
 .project_lore .lore-item span {
   font-size: 12px;
   color: #8a8686;
+}
+
+.project_lore .full-lore {
+  -webkit-box-flex: 1;
+      -ms-flex: 1 0 100%;
+          flex: 1 0 100%;
+  max-width: 100%;
 }
 
 .project_lore .lg-lore {
@@ -1690,4 +1701,3 @@ footer .material-icons {
 .me-head .me-text h4 {
   margin: 2rem 0 1rem;
 }
-/*# sourceMappingURL=main.css.map */
