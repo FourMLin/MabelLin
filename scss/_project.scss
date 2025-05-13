@@ -194,7 +194,7 @@
 
 .project_text {
     text-align: left;
-    max-width: 800px;
+    max-width: 950px;
     margin: 0 auto;
     padding: 2rem 0 1rem;
     position: relative;
@@ -509,7 +509,7 @@
             border-radius: 4px 4px 0 0;
 
             &.active{
-                border: 1px solid $white;
+                border: 1px solid $black;
                 border-bottom: 0;
             }
         }

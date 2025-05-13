@@ -1341,7 +1341,7 @@ footer .material-icons {
 
 .project_text {
   text-align: left;
-  max-width: 800px;
+  max-width: 950px;
   margin: 0 auto;
   padding: 2rem 0 1rem;
   position: relative;
@@ -1667,7 +1667,7 @@ footer .material-icons {
 }
 
 .tab .tab_list li.active {
-  border: 1px solid #ffffff;
+  border: 1px solid #121111;
   border-bottom: 0;
 }
 
@@ -1701,3 +1701,4 @@ footer .material-icons {
 .me-head .me-text h4 {
   margin: 2rem 0 1rem;
 }
+/*# sourceMappingURL=main.css.map */
