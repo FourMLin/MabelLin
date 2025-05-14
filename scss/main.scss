@@ -13,6 +13,10 @@
     max-width: 1024px;
     margin: 0 auto;
     padding: 1rem;
+
+    @include mobile-width(){
+        padding: 0rem;
+    }
 }
 
 .portfolio_list-gallery {
