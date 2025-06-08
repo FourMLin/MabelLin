@@ -33,7 +33,7 @@
 .project-wrap {
     padding: 3rem 1rem;
     margin: 0 auto;
-    max-width: 1024px;
+    max-width: 850px;
 
     &.darkmod {
         background-color: $background;
@@ -56,15 +56,16 @@
 }
 
 .lore-title {
-    margin-bottom: 1rem;
+    margin-bottom: 2rem;
 }
 
 .project_lore {
     display: flex;
     flex-wrap: wrap;
+    margin-bottom: 2rem;
 
     .lore-item {
-        margin-bottom: 3rem;
+        margin-bottom: 2rem;
 
         h4{
             margin-bottom: 8px;
@@ -162,6 +163,10 @@
     }
     &.teller {
         background-image: url(../img/tell-0.jpg);
+    }
+
+    &.tesco {
+        background-image: url(../img/tescoclubcard/1.jpg);
     }
 
     .title_text {

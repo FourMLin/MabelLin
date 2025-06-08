@@ -10,7 +10,7 @@
 }
 
 .container {
-    max-width: 1024px;
+    max-width: 850px;
     margin: 0 auto;
     padding: 1rem;
 
@@ -20,7 +20,7 @@
 }
 
 .portfolio_list-gallery {
-    max-width: 1024px;
+    max-width: 850px;
     margin: 0 auto;
     padding: 1rem 0;
 }
@@ -384,6 +384,7 @@ footer {
 
         span {
             font-size: 12px;
+            line-height: 1;
             // width: 100%;
             // padding: 6px;
             // display: inline-block;            position: relative;
@@ -392,6 +393,10 @@ footer {
             // background-size: cover;
             // background-image: url(../img/index-fileimg.svg);
             // background-size: cover;
+
+            @include mobile-width() {
+            font-size: 12px;
+        }
         }
 
     }
@@ -626,6 +631,27 @@ footer {
     }
 }
 
+.triple {
+
+    .item-inner {
+
+        &::after {
+            background-image: url(../img/T-n-0.png);
+        }
+    }
+
+}
+
+.tesco {
+
+    .item-inner {
+
+        &::after {
+            background-image: url(../img/tescoclubcard/1.jpg);
+        }
+    }
+
+}
 
 .main-block {
 

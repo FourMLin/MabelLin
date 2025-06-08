@@ -73,7 +73,7 @@ h3,
 h4,
 h5,
 h6 {
-  line-height: 1.2;
+  line-height: 1.5;
   letter-spacing: .5px;
   margin: 0;
 }
@@ -138,7 +138,7 @@ h5 {
 }
 
 p {
-  line-height: 1.5;
+  line-height: 1.6;
   font-size: 18px;
   margin: 0;
   padding: 0;
@@ -182,6 +182,11 @@ ul {
 ul li {
   list-style: none;
   line-height: 1.5;
+}
+
+ul.disc li {
+  list-style: disc;
+  list-style-position: inside;
 }
 
 ol {
@@ -313,7 +318,7 @@ textarea {
 }
 
 .container {
-  max-width: 1024px;
+  max-width: 850px;
   margin: 0 auto;
   padding: 1rem;
 }
@@ -325,7 +330,7 @@ textarea {
 }
 
 .portfolio_list-gallery {
-  max-width: 1024px;
+  max-width: 850px;
   margin: 0 auto;
   padding: 1rem 0;
 }
@@ -710,6 +715,13 @@ footer .material-icons {
 
 .item-inner .item-tag span {
   font-size: 12px;
+  line-height: 1;
+}
+
+@media all and (max-width: 768px) {
+  .item-inner .item-tag span {
+    font-size: 12px;
+  }
 }
 
 .item-inner:hover {
@@ -849,6 +861,14 @@ footer .material-icons {
 
 .craftmind .item-inner::after {
   background-image: url(../img/index-craftmind.jpg);
+}
+
+.triple .item-inner::after {
+  background-image: url(../img/T-n-0.png);
+}
+
+.tesco .item-inner::after {
+  background-image: url(../img/tescoclubcard/1.jpg);
 }
 
 .main-block .item-inner::after {
@@ -1169,7 +1189,7 @@ footer .material-icons {
 .project-wrap {
   padding: 3rem 1rem;
   margin: 0 auto;
-  max-width: 1024px;
+  max-width: 850px;
 }
 
 .project-wrap.darkmod {
@@ -1193,7 +1213,7 @@ footer .material-icons {
 }
 
 .lore-title {
-  margin-bottom: 1rem;
+  margin-bottom: 2rem;
 }
 
 .project_lore {
@@ -1202,10 +1222,11 @@ footer .material-icons {
   display: flex;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
+  margin-bottom: 2rem;
 }
 
 .project_lore .lore-item {
-  margin-bottom: 3rem;
+  margin-bottom: 2rem;
 }
 
 .project_lore .lore-item h4 {
@@ -1316,6 +1337,10 @@ footer .material-icons {
 
 .main_title.teller {
   background-image: url(../img/tell-0.jpg);
+}
+
+.main_title.tesco {
+  background-image: url(../img/tescoclubcard/1.jpg);
 }
 
 .main_title .title_text {

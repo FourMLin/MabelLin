@@ -40,7 +40,7 @@ h3,
 h4,
 h5,
 h6 {
-  line-height: 1.2;
+  line-height: 1.5;
   letter-spacing: .5px;
   margin: 0;
 
@@ -90,7 +90,7 @@ h5 {
 }
 
 p {
-  line-height: 1.5;
+  line-height: 1.6;
   font-size: 18px;
   margin: 0;
   padding: 0;
@@ -134,8 +134,19 @@ ul {
   li {
     list-style: none;
     line-height: 1.5;
+
   }
+
+  &.disc{
+
+    li{
+      list-style: disc;
+      list-style-position: inside;
+    }
+  }
+
 }
+
 
 ol {
   margin: 0;
