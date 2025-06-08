@@ -612,20 +612,8 @@ footer .material-icons {
   margin-bottom: 5rem;
 }
 
-.list_container {
-  height: 75vh;
-  max-height: 75vh;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-}
-
-.list_container .owl-carousel {
-  margin: auto;
-}
-
 .gallery-item {
-  padding: 0.5rem;
+  padding: 1.5rem 0.5rem;
   position: relative;
   -webkit-transition: .3s ease-out;
   transition: .3s ease-out;
@@ -643,8 +631,10 @@ footer .material-icons {
   display: block;
   position: relative;
   z-index: 2;
-  height: 240px;
+  height: 220px;
   max-height: 240px;
+  -webkit-transition: 0.3s ease-in-out;
+  transition: 0.3s ease-in-out;
 }
 
 @media all and (max-width: 768px) {
@@ -662,13 +652,11 @@ footer .material-icons {
   background-size: cover;
   position: absolute;
   right: 0;
-  bottom: 0;
+  bottom: 0px;
   width: 100%;
   height: 100%;
-  border-radius: 16px;
+  border-radius: 16px 16px;
   z-index: -1;
-  -webkit-transition: 0.3s ease-in-out;
-  transition: 0.3s ease-in-out;
 }
 
 @media all and (max-width: 768px) {
@@ -678,9 +666,17 @@ footer .material-icons {
   }
 }
 
-.item-inner:hover::after {
-  -webkit-transform: scale(1.05);
-          transform: scale(1.05);
+.item-inner::before {
+  content: "";
+  display: block;
+  width: 100%;
+  height: 100%;
+  background-color: #121111;
+  border-radius: 16px 16px;
+  -webkit-transition: 0.3s ease-in-out;
+  transition: 0.3s ease-in-out;
+  opacity: 0;
+  z-index: 2;
 }
 
 .item-inner .item-block {
@@ -699,13 +695,34 @@ footer .material-icons {
   }
 }
 
-.item-inner .item-logo {
-  width: 50px;
-  margin-bottom: 1rem;
+.item-inner .item-tag {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  color: #ffffff;
+  margin: 0 auto;
+  opacity: 0;
+  -webkit-transition: 0.3s ease-in-out;
+  transition: 0.3s ease-in-out;
 }
 
-.item-inner .item-content h4 {
-  margin-bottom: 0.5rem;
+.item-inner .item-tag span {
+  font-size: 12px;
+}
+
+.item-inner:hover {
+  -webkit-transform: scale(1.05);
+          transform: scale(1.05);
+}
+
+.item-inner:hover::before {
+  opacity: 0.5;
+}
+
+.item-inner:hover .item-tag {
+  opacity: 1;
 }
 
 .item-wrap {
@@ -801,27 +818,12 @@ footer .material-icons {
   opacity: 0.8;
 }
 
-.item-tag {
-  margin-top: 1.5rem;
-}
-
-.item-tag ul li {
-  display: inline-block;
-  font-size: 14px;
-  opacity: 0.6;
-  margin-right: 0.5rem;
-}
-
 .digital-insurance .item-inner::after {
   background-image: url(../img/index-smartbnb.jpg);
 }
 
 .smarthome-app .item-inner::after {
   background-image: url(../img/index-iot.jpg);
-}
-
-.triple .item-inner {
-  background-color: #dbd9e8;
 }
 
 .triple .item-inner::after {
@@ -1744,4 +1746,3 @@ iframe {
   width: 100%;
   height: 450px;
 }
-/*# sourceMappingURL=main.css.map */
