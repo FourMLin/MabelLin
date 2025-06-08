@@ -318,7 +318,7 @@ textarea {
 }
 
 .container {
-  max-width: 850px;
+  max-width: 1024px;
   margin: 0 auto;
   padding: 1rem;
 }
@@ -330,7 +330,7 @@ textarea {
 }
 
 .portfolio_list-gallery {
-  max-width: 850px;
+  max-width: 1024px;
   margin: 0 auto;
   padding: 1rem 0;
 }
@@ -1189,7 +1189,7 @@ footer .material-icons {
 .project-wrap {
   padding: 3rem 1rem;
   margin: 0 auto;
-  max-width: 850px;
+  max-width: 1024px;
 }
 
 .project-wrap.darkmod {
