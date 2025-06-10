@@ -716,6 +716,7 @@ footer .material-icons {
 .item-inner .item-tag span {
   font-size: 12px;
   line-height: 1;
+  color: #ffffff;
 }
 
 @media all and (max-width: 768px) {
