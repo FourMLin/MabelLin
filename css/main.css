@@ -158,6 +158,7 @@ p.secret {
 a {
   color: #121111;
   text-decoration: none;
+  cursor: pointer;
 }
 
 a.main_link {
@@ -1129,6 +1130,70 @@ footer .material-icons {
           box-shadow: 2px 2px 6px rgba(208, 208, 208, 0.5);
 }
 
+.popout {
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  position: fixed;
+  background: rgba(18, 17, 17, 0.5);
+  display: none;
+}
+
+.popout .pop_outline {
+  padding: 16px;
+  position: relative;
+  top: 10%;
+}
+
+.popout .pop_block {
+  background: #ffffff;
+  border-radius: 16px;
+  margin: 0 auto;
+  max-width: 800px;
+  padding: 16px;
+}
+
+.popout .pop_block .pop_inner {
+  padding: 8px;
+  max-width: 800px;
+  max-height: 500px;
+  overflow-y: scroll;
+}
+
+@media all and (max-width: 991px) {
+  .popout .pop_block .pop_inner {
+    overflow-y: scroll;
+  }
+}
+
+.popout .pop_block .pop_inner p {
+  font-size: 16px;
+}
+
+.popout .pop_block .pop_inner .pop_img {
+  width: 150px;
+  margin: 24px auto 0;
+}
+
+.popout .pop_block .pop_left {
+  background-color: #ffffff;
+  border-radius: 99em;
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  -webkit-transform: translate(-50%, 50%);
+          transform: translate(-50%, 50%);
+  width: 30px;
+  height: 30px;
+  text-align: center;
+  cursor: pointer;
+}
+
+.popout.active {
+  display: block;
+}
+
 @font-face {
   font-family: 'LucidaGrande';
   src: local("LucidaGrande") ， url("..font//LucidaGrande.woff") format("woff"), url("../font/LucidaGrande.ttf") format("opentype"), url("../font/Helvetica.eot") format("embedded-opentype");
@@ -1764,3 +1829,4 @@ iframe {
   width: 100%;
   height: 450px;
 }
+/*# sourceMappingURL=main.css.map */

@@ -58,8 +58,11 @@
       <div class="landing_page">
         <div class="container">
           <h2 class="animate__animated animate__fadeInUp">Hi, I'm Mabel Lin</h2>
-          <p class="sub_title animate__animated animate__fadeInUp animate__delay-.5s	">A designer who believes that the best experience designs a balance between business value and customer needs. <br>Seeing design as a blend of different disciplines —on a journey to become a polymath.</p>
-          <p class="state animate__animated animate__fadeInUp animate__delay-1s">Feel free to check out THE MANUAL or just reach out! 😃</p>
+          <p class="sub_title animate__animated animate__fadeInUp animate__delay-.5s	">A designer who believes that the
+            best experience designs a balance between business value and customer needs. <br>Seeing design as a blend of
+            different disciplines —on a journey to become a polymath.</p>
+          <p class="state animate__animated animate__fadeInUp animate__delay-1s">Feel free to check out <a class="main_link manual_click">THE MANUAL</a> or
+            just reach out! 😃</p>
           <ul class="me-link state animate__animated animate__fadeInUp animate__delay-1s">
             <li><a href="https://www.linkedin.com/in/imabellin/">
                 <img src="img/icon-linkedin.svg" alt="">
@@ -172,6 +175,35 @@
 
     </main>
 
+    <div class="popout ">
+      <div class="pop_outline">
+<div class="pop_block animate__animated animate__fadeInUp">
+        <div class="pop_inner">
+          <p>This is a manual for a career that seems to have too many plot twists.
+            <br><br>Every step I’ve taken might look so “unsteady” which is based on an underlying reason: Find the true meaning
+            of good user experience. It is a challenge for small or traditional companies to have the time and capital
+            to observe users. Through these experiences, I immersed myself in different teams, industries and culture to
+            find which way could make a real impact rather than stick numerous notes on Figma. I’ve built the ability to
+            spot what really works in a workflow and how much collaboration is shaped by each role’s limitations and
+            influence. I could find my position in a vague situation.
+            <br><br>So now, I’ve turned those stories into my strengths. I’m looking for a long-term design role where I can
+            grow with the team and contribute with focus and consistency. After all, a strange tool may one day become a
+            solution.
+            <br><br>
+            Thanks for taking your time to read this MANUAL of my life :)
+
+          </p>
+          <div class="pop_img">
+            <img src="img/kermit.gif" alt="">
+          </div>
+
+        </div>
+        <div class="pop_left">X</div>
+      </div>
+      </div>
+      
+    </div>
+
 
 
     <footer>
@@ -194,7 +226,7 @@
     $("#nav li").on('click', function () {
       $(this).addClass('active').siblings().removeClass('active');
     });
-    
+
 
     $(".me-link li").hover(function () {
       $(this).addClass('animate__animated animate__shakeY');
@@ -202,7 +234,13 @@
       $(this).removeClass('animate__animated animate__shakeY');
     });
 
+     $(".manual_click").on('click', function () {
+      $(".popout").addClass('active');
+    });
 
+    $(".pop_left").on('click', function () {
+      $(".popout").removeClass('active');
+    });
 
   </script>
 
