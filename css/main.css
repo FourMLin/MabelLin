@@ -1842,4 +1842,10 @@ iframe {
   font-style: italic;
   padding: 2px 4px 2px 12px;
 }
+
+.bar_text .p_bar {
+  border-left: 4px solid #121111;
+  font-style: italic;
+  padding: 2px 4px 2px 12px;
+}
 /*# sourceMappingURL=main.css.map */
