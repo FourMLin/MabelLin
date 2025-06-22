@@ -416,14 +416,9 @@ textarea {
 }
 
 video {
-  position: fixed;
+  position: relative;
   top: 50%;
-  left: 0;
-  -webkit-transform: translateY(-70%);
-          transform: translateY(-70%);
   width: 100%;
-  z-index: -5;
-  opacity: 0.9;
 }
 
 header {
@@ -1244,7 +1239,7 @@ footer .material-icons {
 }
 
 .home a:hover {
-  background-color: #967BB6;
+  background-color: #7ba9b6;
 }
 
 .home svg {

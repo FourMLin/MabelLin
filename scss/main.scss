@@ -85,13 +85,9 @@
 }
 
 video {
-    position: fixed;
+    position: relative;
     top: 50%;
-    left: 0;
-    transform: translateY(-70%);
     width: 100%;
-    z-index: -5;
-    opacity: 0.9;
 }
 
 header {
