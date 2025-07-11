@@ -76,6 +76,10 @@
             color: $gray;
         }
 
+        h4{
+            margin-bottom: 8px;
+        }
+
         // &:last-of-type {
         //     margin-top: -3.5rem;
 
@@ -85,7 +89,11 @@
         // }
     }
 
+<<<<<<< Updated upstream
     .full-lore {
+=======
+    .full-lore{
+>>>>>>> Stashed changes
         flex: 1 0 100%;
         max-width: 100%;
     }

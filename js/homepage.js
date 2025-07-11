@@ -15,6 +15,7 @@ $(document).ready(function() {
   });
 });
 
+<<<<<<< Updated upstream
 
 $(".mabel_logo").hover(function(){
   $(this).addClass('animate__animated animate__headShake');
@@ -22,3 +23,7 @@ $(".mabel_logo").hover(function(){
    $(this).removeClass('animate__animated animate__headShake');
 });
 
+=======
+// document.oncontextmenu = new Function("return false");
+//     oncontextmenu = "return false;"
+>>>>>>> Stashed changes
