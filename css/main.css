@@ -1083,6 +1083,7 @@ footer .material-icons {
 .project_lore .lore-item span {
   font-size: 12px;
   color: #8a8686;
+  text-align: left;
 }
 .project_lore .full-lore {
   flex: 1 0 100%;
