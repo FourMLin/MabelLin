@@ -48,18 +48,13 @@ main {
   display: block;
 }
 
-::-moz-selection {
-  background: #383d8c;
-  color: #ffffff;
-}
-
 ::selection {
-  background: #383d8c;
+  background: #1b2a54;
   color: #ffffff;
 }
 
 ::-moz-selection {
-  background: #383d8c;
+  background: #1b2a54;
   color: #ffffff;
 }
 
@@ -79,7 +74,7 @@ h3.color-red,
 h4.color-red,
 h5.color-red,
 h6.color-red {
-  color: #383d8c;
+  color: #1b2a54;
 }
 
 h1 {
@@ -149,7 +144,7 @@ a {
   cursor: pointer;
 }
 a.main_link {
-  color: #383d8c;
+  color: #1b2a54;
   text-decoration: underline;
 }
 a.white_link {
@@ -232,7 +227,7 @@ button,
 [type=button],
 [type=reset],
 [type=submit] {
-  -webkit-appearance: button;
+  appearance: button;
 }
 
 button::-moz-focus-inner,
@@ -500,7 +495,7 @@ footer .footer_text p {
 }
 footer .material-icons {
   font-size: 12px;
-  color: #383d8c;
+  color: #1b2a54;
 }
 
 .portfolio_list-title {
@@ -763,7 +758,7 @@ footer .material-icons {
   margin: 8px;
 }
 .owl-carousel button.owl-dot.active {
-  background-color: #383d8c;
+  background-color: #1b2a54;
 }
 
 .owl-nav {
@@ -781,7 +776,7 @@ footer .material-icons {
 .owl-nav .owl-prev:hover, .owl-nav .owl-prev:active,
 .owl-nav .owl-next:hover,
 .owl-nav .owl-next:active {
-  color: #383d8c !important;
+  color: #1b2a54 !important;
 }
 .owl-nav .owl-prev {
   left: 0%;
@@ -835,7 +830,7 @@ footer .material-icons {
   transform: translateY(-50%);
 }
 .loading #loading-progress {
-  background-color: #383d8c;
+  background-color: #1b2a54;
   width: 0%;
   height: 3px;
   position: absolute;
@@ -894,24 +889,19 @@ footer .material-icons {
 .item-masonry {
   width: 100%;
   margin: 0px auto;
-  -moz-column-count: 3;
-       column-count: 3;
-  -moz-column-gap: 0px;
-       column-gap: 0px;
+  column-count: 3;
+  column-gap: 0px;
 }
 .item-masonry .item {
   padding: 2px;
   box-sizing: border-box;
   margin: 0 auto;
-  -moz-column-break-inside: avoid;
-       break-inside: avoid;
+  break-inside: avoid;
 }
 .item-masonry .item img {
   width: 100%;
-  -o-object-fit: cover;
-     object-fit: cover;
-  -o-object-position: 50% 50%;
-     object-position: 50% 50%;
+  object-fit: cover;
+  object-position: 50% 50%;
 }
 
 .item-square {
@@ -1027,13 +1017,13 @@ footer .material-icons {
 }
 .home a {
   display: block;
-  background-color: #383d8c;
+  background-color: #1b2a54;
   width: 30px;
   height: 30px;
   border-radius: 99em;
 }
 .home a:hover {
-  background-color: #7b84b6;
+  background-color: #9caed4;
 }
 .home svg {
   fill: #ffffff;
@@ -1061,12 +1051,15 @@ footer .material-icons {
 }
 .project-wrap h5 span,
 .project-wrap h4 span {
-  color: #383d8c;
+  color: #1b2a54;
   font-size: 16px;
 }
 
 .lore-title {
   margin-bottom: 2rem;
+}
+.lore-title .main_link {
+  font-size: 20px;
 }
 
 .project_lore {
@@ -1353,7 +1346,7 @@ span {
 }
 .project_quote .quote {
   padding-left: 1.5rem;
-  border-left: 5px solid #383d8c;
+  border-left: 5px solid #1b2a54;
   line-height: 2;
   margin: 15px 0;
 }
@@ -1380,8 +1373,10 @@ span {
 
 .masnory {
   max-width: 960px;
+  -webkit-column-count: 3;
   -moz-column-count: 3;
   column-count: 3;
+  -webkit-column-gap: 1rem;
   -moz-column-gap: 1rem;
   column-gap: 1rem;
   margin: 0 auto;
@@ -1390,12 +1385,14 @@ span {
 @media all and (max-width: 991px) {
   .masnory {
     -moz-column-count: 2;
+    -webkit-column-count: 2;
     column-count: 2;
   }
 }
 @media all and (max-width: 768px) {
   .masnory {
     -moz-column-count: 1;
+    -webkit-column-count: 1;
     column-count: 1;
   }
 }
